@@ -1,0 +1,276 @@
+
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+
+#container{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,ddf1f9+35,a0d8ef+100;Blue+3D+%2318 */
+    background: #feffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+}
+h1{
+    padding: 5px 0 0 0;
+    font-size: 30pt;
+    font-family: "Century Gothic";
+    font-weight: bold;
+
+}
+
+
+#chat-container{
+    margin: 10px 0 0 0 ;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: 780px;
+    display: inline-block;
+    width: 100%;
+    background: #feffff;
+    border-radius: 10px;
+}
+
+#search-form{
+    height: 8%;
+    min-height: 52px ;
+    width: 30%;
+    background: #191970	;
+    float: left;
+    border-radius: 10px 0 0 0;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    text-align: left;
+    padding: 15px 10px;
+
+}
+
+#search-input{
+    background: rgba(255,255,255,0.3);
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: "Arial",sans-serif;
+    font-size: 14pt;
+}
+#search-input::placeholder{
+    color: #ddd;
+}
+#search-input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+#chat-title{
+    float: left;
+    height: 8%;
+    width: 70%;
+    background: #eee;
+    border-radius: 0 10px 0 0;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: left;
+    padding: 20px 0 20px 20px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size:20pt;
+
+}
+
+#conversation-list{
+    min-width: 100px;
+    min-height: 700px;
+    height: 92%;
+    width: 30%;
+    background: #000080;
+    border-radius: 0 0 0 10px;
+    float: left;
+}
+
+
+#chat-message-list{
+    float: left;
+    width: 70%;
+    height: 82%;
+    background: floralwhite;
+    overflow-y:auto;
+}
+
+#my-chat-form, #interlocutor-chat-form{
+    float: left;
+    width: 70%;
+    height: 80px;
+    background: #eee;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    text-align: left;
+    padding: 15px 15px 15px 10px;
+
+}
+
+#interlocutor-chat-form{
+    float: right;
+    border-radius: 0 0 10px 10px;
+    min-width: 700px;
+}
+#my-chat-form>img, #interlocutor-chat-form>img{
+    padding: 8px 5px 8px 0;
+}
+
+
+
+
+.clipImg{
+    height: 100%;
+    width: 6%;
+    margin: 0 5px 0 0;
+}
+.conversation{
+    padding: 10px 0 0 10px;
+    text-align: left;
+    font-family: Arial;
+    font-size: 1rem;
+    height: 10%;
+    min-height: 80px;
+
+    border-top: 1px solid rgba(0,0,0,0.5);
+    color: #eee;
+}
+
+.conversation:hover,.conversation.active{
+    background: #0000CD	;
+}
+.conversation:hover{
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.conversation img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.interlocutor-name{
+    padding: 4px 10px 12px 10px;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 50%;
+    float:left;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.message-date-list{
+    padding: 5px 10px 10px 10px;
+    color: #ddd;
+    margin-bottom: 2px;
+    text-align: right;
+}
+.last-conversation-message{
+    float: left;
+    text-align: left;
+    height: 40%;
+    width: 73%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+
+#my-message-input, #interlocutor-message-input{
+    width: 85%;
+    height:100% ;
+    border-radius: 5px;
+    font-family: Arial;
+    font-size: 14pt;
+    padding-left: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+.img-send{
+    height: 100%;
+    margin-left: 10px;
+}
+
+#my-message-input:focus::-webkit-input-placeholder  {
+    color:transparent;
+}
+
+#interlocutor-message-input:focus::-webkit-input-placeholder  {
+    color:transparent;
+}
+
+#chat-message-list{
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 10px 20px;
+}
+
+
+.interlocutor-messages{
+    text-align: left;
+}
+.my-messages{
+    text-align: right;
+}
+
+.message-text{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15pt;
+    margin-bottom: 10px;
+    padding: 9px 14px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message-date{
+    color: #777;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.my-messages,.interlocutor-messages{
+    padding-top: 5px;
+}
+
+.my-messages .message-text{
+    text-align: left;
+    background: #0048AA;
+    border:1px solid #0044AA;
+    color: #eee;
+    border-radius: 25px 25px 0 25px;
+}
+
+
+.interlocutor-messages .message-text{
+    background: #eee;
+    border:1px solid #ddd;
+    color: #111;
+    border-radius: 25px 25px 25px 0px;
+}
+
+
+
+

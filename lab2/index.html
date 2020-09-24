@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Messenger</title>
+</head>
+<body>
+<div id="container">
+    <h1>Messenger</h1>
+    <div id="chat-container">
+        <div id="search-form">
+            <input placeholder="Search" id="search-input">
+        </div >
+        <div id="chat-title">Steve Jobs</div>
+        <div id="conversation-list">
+            <div id="0" class="conversation active" onclick="clickOnOtherConversation(0)">
+                <img src="img/user.png" height="126" width="130"/>
+                <div class="interlocutor-name">Steven Jobs</div>
+                <div class="message-date-list">20 Sep</div>
+                <div class="last-conversation-message" ></div>
+            </div>
+            <div id="1" class="conversation" onclick="clickOnOtherConversation(1)">
+                <img src="img/user.png" height="126" width="130"/>
+                <div class="interlocutor-name">Mark Tsukerberg</div>
+                <div class="message-date-list">20 Sep</div>
+                <div class="last-conversation-message" ></div>
+            </div><div id="2" class="conversation" onclick="clickOnOtherConversation(2)">
+                <img src="img/user.png" height="126" width="130"/>
+                <div class="interlocutor-name">Bill Gates</div>
+                <div class="message-date-list">20 Sep</div>
+                <div class="last-conversation-message" ></div>
+            </div>
+
+
+        </div>
+        <div id="chat-message-list">
+
+        </div>
+        <div id="my-chat-form">
+            <img class="clipImg" src="img/img.png"/>
+            <input id="my-message-input" placeholder="Type a text...     (My messages)">
+            <img src="img/nextpng.com.png" onclick="sendMessage('myMessage')" class="img-send" id="btnSendMyMsg"/>
+        </div>
+        <div id="interlocutor-chat-form">
+            <img class="clipImg" src="img/img.png"/>
+            <input id="interlocutor-message-input" placeholder="Type a text...     (Interlocutor messages)">
+            <img src="img/grayArrow.png" onclick="sendMessage('interlocutorMessage')" class="img-send" id="btnSendIntrMsg"/>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>

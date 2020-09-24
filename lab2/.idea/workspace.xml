@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="909b1569-7863-4bf4-b7c1-312d202d974b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hoxvqgJuugT6VWXJR7ikZEKAVV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/labsJS/lab2_test" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/lab2/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="909b1569-7863-4bf4-b7c1-312d202d974b" name="Default Changelist" comment="" />
+      <created>1600691479914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600691479914</updated>
+      <workItem from="1600691480945" duration="15481000" />
+      <workItem from="1600708484548" duration="14501000" />
+      <workItem from="1600760002791" duration="451000" />
+      <workItem from="1600763780066" duration="634000" />
+      <workItem from="1600775075983" duration="988000" />
+      <workItem from="1600776074555" duration="59000" />
+      <workItem from="1600776142157" duration="8441000" />
+      <workItem from="1600784603743" duration="5496000" />
+      <workItem from="1600801282073" duration="1040000" />
+      <workItem from="1600803068122" duration="11987000" />
+      <workItem from="1600847001515" duration="3340000" />
+      <workItem from="1600850369719" duration="41000" />
+      <workItem from="1600850419682" duration="1555000" />
+      <workItem from="1600852700246" duration="5629000" />
+      <workItem from="1600860072978" duration="2975000" />
+      <workItem from="1600863057827" duration="4721000" />
+      <workItem from="1600898609476" duration="194000" />
+      <workItem from="1600898812349" duration="996000" />
+      <workItem from="1600899820279" duration="913000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1600721773090">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1600721773090" />
+    <state width="1081" height="498" key="SwitcherDM" timestamp="1600812751433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1081" height="498" key="SwitcherDM/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1600812751433" />
+  </component>
+</project>
