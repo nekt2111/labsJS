@@ -37,18 +37,25 @@ function changeDiv(id){
     }
 }
 
+
+
 for(let i=0; i<localStorage.length; i++) {
     console.log(localStorage.getItem("divPos"))
 }
 
 
 function clickOnOtherConversation(id){
+    window.location.replace(window.location.href.substring(0,window.location.href.indexOf("?")) + "?id="+id.toString());
     setCurrentDivId(id)
-    console.log(getCurrentDivId())
+}
 
-    window.location.reload();
+function changeCurrentDivId(){
+    let urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get("id")
+    setCurrentDivId(parseInt(id))
 
 }
+
 
 
 function changeAllLastMessage(amountOfDivs){
@@ -82,10 +89,37 @@ function changeLastMessage(idNum){
 
 function changeChatTitle(){
     let currentId = getCurrentDivId()
-    let title = document.getElementById(currentId.toString()).querySelector(".interlocutor-name").textContent
+    let title = ""
+    if(!isNaN(currentId)) {
+        title = document.getElementById(currentId.toString()).querySelector(".interlocutor-name").textContent
+    }
+
     document.getElementById("chat-title").textContent = title
 
 }
+
+document.getElementById("search-input").oninput = function (){
+    let val = this.value.trim().toLowerCase()
+    console.log(val)
+    let elasticItems = document.querySelectorAll(".interlocutor-name");
+    console.log(elasticItems)
+    if (val !== '') {
+        elasticItems.forEach((elem) => {
+            if (elem.innerText.toLowerCase().search(val) === -1) {
+                elem.parentElement.classList.add('hide')
+            } else {
+                elem.parentElement.classList.remove('hide')
+            }
+        })
+    } else {
+        elasticItems.forEach((elem) => {
+            elem.parentElement.classList.remove('hide')
+        })
+    }
+}
+
+
+
 
 
 function setCurrentDivId(id){
@@ -101,8 +135,6 @@ function setCurrentDivId(id){
     }
 
 
-
-    //
 
 
     localStorage.setItem("currentDivId",id.toString())
@@ -309,6 +341,7 @@ document.getElementById("interlocutor-message-input").addEventListener("keyup", 
     }
 });
 
+changeCurrentDivId()
 showAllMessages()
 changeAllLastMessage(amountOfDivs)
 let scroll = document.getElementById('chat-message-list');
