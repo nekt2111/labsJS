@@ -24,7 +24,7 @@ let divId2 = `<div id="listOfMyMessages" class="my-messages">
                 <div class="message-date"></div>
             </div>`
 
-//
+////////////////////
 
 
 // Router
@@ -32,7 +32,7 @@ function clickOnOtherConversation(id){
     window.location.replace(window.location.href.substring(0,window.location.href.indexOf("?")) + "?id="+id.toString());
     setCurrentDivId(id)
 }
-//
+///////////////
 
 function sendMessage(type) {
 
