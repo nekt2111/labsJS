@@ -1,6 +1,7 @@
 
-let amountOfDivs = 3
+let amountOfDivs = 3 // Количество собеседников
 
+// Хардкод блоков для собеседников:
 
 let divId0 = `<div id="listOfMyMessages" class="my-messages">
                 <div id="dateOfMyMessage" class="message-date"></div>
@@ -23,200 +24,15 @@ let divId2 = `<div id="listOfMyMessages" class="my-messages">
                 <div class="message-date"></div>
             </div>`
 
-function changeDiv(id){
-    let div = document.getElementById("chat-message-list")
-    switch (id){
-        case 0:
-            div.innerHTML = divId0
-            return
-        case 1:
-            div.innerHTML = divId1
-            return;
-        case 2:
-            div.innerHTML = divId2
-    }
-}
+//
 
 
-
-for(let i=0; i<localStorage.length; i++) {
-    console.log(localStorage.getItem("divPos"))
-}
-
-
+// Router
 function clickOnOtherConversation(id){
     window.location.replace(window.location.href.substring(0,window.location.href.indexOf("?")) + "?id="+id.toString());
     setCurrentDivId(id)
 }
-
-function changeCurrentDivId(){
-    let urlParams = new URLSearchParams(window.location.search);
-    let id = urlParams.get("id")
-    setCurrentDivId(parseInt(id))
-
-}
-
-
-
-function changeAllLastMessage(amountOfDivs){
-    for (let i =0; i < amountOfDivs;i++){
-        changeLastMessage(i)
-    }
-
-}
-
-function changeLastMessage(idNum){
-
-
-    let idStr = idNum.toString()
-    let maxId = getGeneratedId()
-    let a;
-    for (let i = 0;i <= maxId;i++){
-        if(localStorage.getItem(`${i}divId`) === idStr){
-            a = i
-        }
-    }
-    document.getElementById(idStr).querySelector(".message-date-list").innerHTML = localStorage.getItem(`${a}date`)
-   document.getElementById(idStr).querySelector(".last-conversation-message").innerHTML = localStorage.getItem(`${a}text`)
-
-
-}
-
-
-
-
-
-
-function changeChatTitle(){
-    let currentId = getCurrentDivId()
-    let title = ""
-    if(!isNaN(currentId)) {
-        title = document.getElementById(currentId.toString()).querySelector(".interlocutor-name").textContent
-    }
-
-    document.getElementById("chat-title").textContent = title
-
-}
-
-document.getElementById("search-input").oninput = function (){
-    let val = this.value.trim().toLowerCase()
-    console.log(val)
-    let elasticItems = document.querySelectorAll(".interlocutor-name");
-    console.log(elasticItems)
-    if (val !== '') {
-        elasticItems.forEach((elem) => {
-            if (elem.innerText.toLowerCase().search(val) === -1) {
-                elem.parentElement.classList.add('hide')
-            } else {
-                elem.parentElement.classList.remove('hide')
-            }
-        })
-    } else {
-        elasticItems.forEach((elem) => {
-            elem.parentElement.classList.remove('hide')
-        })
-    }
-}
-
-
-
-
-
-function setCurrentDivId(id){
-
-    // Really bad function :(
-    // Have to be refactored
-    for (let a = 0; a < amountOfDivs;a++){
-        let div = document.getElementById(a.toString())
-        div.className = "conversation"
-        if(a === id){
-            div.className = "conversation active"
-        }
-    }
-
-
-
-
-    localStorage.setItem("currentDivId",id.toString())
-    changeDiv(id)
-    changeChatTitle()
-
-}
-function getCurrentDivId(){
-    let currentIdDiv
-    if(localStorage.getItem("currentDivId")){
-        currentIdDiv = parseInt(localStorage.getItem("currentDivId"))
-    }
-    else{
-        currentIdDiv = 0
-    }
-    return currentIdDiv
-}
-
-
-
-setCurrentDivId(getCurrentDivId())
-
-function getDefaultDivPos(){
-    let defDivPos = ""
-    for (let i = 0; i < amountOfDivs;i++){
-        defDivPos += i.toString()
-    }
-    return defDivPos;
-}
-
-
-function divToStart(){
-    let divPos = getDefaultDivPos()
-    if(localStorage.getItem("divPos")){
-        divPos = localStorage.getItem("divPos")
-    }
-    let newPos = divPos
-    if(divPos[0] !== getCurrentDivId().toString()) {
-        newPos = getCurrentDivId().toString()
-        for (let i = 0; i < divPos.length;i++){
-            if(i !== divPos.indexOf(getCurrentDivId())){
-                newPos += divPos[i]
-            }
-        }
-    }
-
-
-    if((divPos[0].toString() !== getCurrentDivId())) {
-        localStorage.setItem("divPos", newPos)
-    }
-    console.log(divPos)
-    console.log(newPos)
-
-    let mainDiv = document.getElementById("conversation-list")
-    let div = document.getElementById(getCurrentDivId().toString())
-    mainDiv.removeChild(div)
-    mainDiv.prepend(div)
-}
-
-function changeDivPos(amountOfDivs){
-
-    let allDiv = []
-    let mainDiv = document.getElementById("conversation-list")
-    let divPos = getDefaultDivPos()
-    if(localStorage.getItem("divPos")){
-        divPos = localStorage.getItem("divPos")
-    }
-    console.log(divPos)
-    for (let i = 0;i < amountOfDivs;i++){
-        allDiv[i] = document.getElementById(i.toString())
-        mainDiv.removeChild(allDiv[i])
-    }
-    for (let i = 0;i < amountOfDivs;i++){
-        mainDiv.append(allDiv[divPos[i].toString()])
-    }
-    console.log(allDiv)
-
-
-}
-changeDivPos(amountOfDivs)
-
-
+//
 
 function sendMessage(type) {
 
@@ -245,6 +61,43 @@ function sendMessage(type) {
 }
 
 
+
+// Utility functions //////////////////////////////////////////////////////////////
+
+
+function getCurrentDivId(){
+    let currentIdDiv
+    if(localStorage.getItem("currentDivId")){
+        currentIdDiv = parseInt(localStorage.getItem("currentDivId"))
+    }
+    else{
+        currentIdDiv = 0
+    }
+    return currentIdDiv
+}
+
+
+
+function getDefaultDivPos(){
+    let defDivPos = ""
+    for (let i = 0; i < amountOfDivs;i++){
+        defDivPos += i.toString()
+    }
+    return defDivPos;
+}
+
+
+function getGeneratedId(){
+    if(localStorage.length === 1){
+        return 0
+    }
+    if(!localStorage.getItem("divPos")){
+        return (localStorage.length - 1)/4
+    }
+    return (localStorage.length - 2)/4
+}
+
+
 function pushNewMessageToStorage(message,date,type){
     let generatedId = getGeneratedId().toString()
     localStorage.setItem(generatedId + "text",message)
@@ -253,19 +106,25 @@ function pushNewMessageToStorage(message,date,type){
     localStorage.setItem(generatedId + "divId",getCurrentDivId().toString())
 }
 
-function showAllMessages() {
+function setCurrentDivId(id){
 
-    for (let i = 0; i < getGeneratedId(); i++) {
-        if (localStorage.getItem(`${i}divId`) === getCurrentDivId().toString()) {
-            let msgText = localStorage.getItem(`${i}text`)
-            let msgDate = localStorage.getItem(`${i}date`)
-            let msgType = localStorage.getItem(`${i}type`)
-            addMessageToBlock(msgText, msgDate, msgType)
-
+    for (let a = 0; a < amountOfDivs;a++){
+        let div = document.getElementById(a.toString())
+        div.className = "conversation"
+        if(a === id){
+            div.className = "conversation active"
         }
     }
 
+    localStorage.setItem("currentDivId",id.toString())
+    changeDiv(id)
+    changeChatTitle()
+
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// Manipulation with WEB-page
 
 function addMessageToBlock(text,date,type){
 
@@ -289,24 +148,144 @@ function addMessageToBlock(text,date,type){
 
 }
 
+function showAllMessages() {
 
-function getGeneratedId(){
-    if(localStorage.length === 1){
-        return 0
+    for (let i = 0; i < getGeneratedId(); i++) {
+        if (localStorage.getItem(`${i}divId`) === getCurrentDivId().toString()) {
+            let msgText = localStorage.getItem(`${i}text`)
+            let msgDate = localStorage.getItem(`${i}date`)
+            let msgType = localStorage.getItem(`${i}type`)
+            addMessageToBlock(msgText, msgDate, msgType)
+
+        }
     }
-    if(!localStorage.getItem("divPos")){
-        return (localStorage.length - 1)/4
+
+}
+
+function changeDivPos(amountOfDivs){
+
+    let allDiv = []
+    let mainDiv = document.getElementById("conversation-list")
+    let divPos = getDefaultDivPos()
+    if(localStorage.getItem("divPos")){
+        divPos = localStorage.getItem("divPos")
     }
-    return (localStorage.length - 2)/4
+    for (let i = 0;i < amountOfDivs;i++){
+        allDiv[i] = document.getElementById(i.toString())
+        mainDiv.removeChild(allDiv[i])
+    }
+    for (let i = 0;i < amountOfDivs;i++){
+        mainDiv.append(allDiv[divPos[i].toString()])
+    }
+
+
+}
+
+function divToStart(){
+    let divPos = getDefaultDivPos()
+    if(localStorage.getItem("divPos")){
+        divPos = localStorage.getItem("divPos")
+    }
+    let newPos = divPos
+    if(divPos[0] !== getCurrentDivId().toString()) {
+        newPos = getCurrentDivId().toString()
+        for (let i = 0; i < divPos.length;i++){
+            if(i !== divPos.indexOf(getCurrentDivId())){
+                newPos += divPos[i]
+            }
+        }
+    }
+
+
+    if((divPos[0].toString() !== getCurrentDivId())) {
+        localStorage.setItem("divPos", newPos)
+    }
+
+
+    let mainDiv = document.getElementById("conversation-list")
+    let div = document.getElementById(getCurrentDivId().toString())
+    mainDiv.removeChild(div)
+    mainDiv.prepend(div)
+}
+
+// Поиск собеседника по имени
+
+document.getElementById("search-input").oninput = function (){
+    let val = this.value.trim().toLowerCase()
+    let elasticItems = document.querySelectorAll(".interlocutor-name");
+    if (val !== '') {
+        elasticItems.forEach((elem) => {
+            if (elem.innerText.toLowerCase().search(val) === -1) {
+                elem.parentElement.classList.add('hide')
+            } else {
+                elem.parentElement.classList.remove('hide')
+            }
+        })
+    } else {
+        elasticItems.forEach((elem) => {
+            elem.parentElement.classList.remove('hide')
+        })
+    }
+}
+
+
+//
+
+function changeChatTitle(){
+    let currentId = getCurrentDivId()
+    let title = ""
+    if(!isNaN(currentId)) {
+        title = document.getElementById(currentId.toString()).querySelector(".interlocutor-name").textContent
+    }
+
+    document.getElementById("chat-title").textContent = title
+
+}
+
+function changeCurrentDivId(){
+    let urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get("id")
+    setCurrentDivId(parseInt(id))
 }
 
 
 
+function changeAllLastMessage(amountOfDivs){
+    for (let i =0; i < amountOfDivs;i++){
+        changeLastMessage(i)
+    }
+
+}
+
+function changeLastMessage(idNum){
+    let idStr = idNum.toString()
+    let maxId = getGeneratedId()
+    let a;
+    for (let i = 0;i <= maxId;i++){
+        if(localStorage.getItem(`${i}divId`) === idStr){
+            a = i
+        }
+    }
+    document.getElementById(idStr).querySelector(".message-date-list").innerHTML = localStorage.getItem(`${a}date`)
+    document.getElementById(idStr).querySelector(".last-conversation-message").innerHTML = localStorage.getItem(`${a}text`)
+}
+
+function changeDiv(id){
+    let div = document.getElementById("chat-message-list")
+    switch (id){
+        case 0:
+            div.innerHTML = divId0
+            return
+        case 1:
+            div.innerHTML = divId1
+            return;
+        case 2:
+            div.innerHTML = divId2
+    }
+}
 
 
-
-
-
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // Formatted date
@@ -318,10 +297,7 @@ function getFormattedDate(date) {
     return date.toLocaleDateString("en-GB",options)
 }
 
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -341,6 +317,12 @@ document.getElementById("interlocutor-message-input").addEventListener("keyup", 
     }
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Вызов всех функций
+
+changeDivPos(amountOfDivs)
+setCurrentDivId(getCurrentDivId())
 changeCurrentDivId()
 showAllMessages()
 changeAllLastMessage(amountOfDivs)
