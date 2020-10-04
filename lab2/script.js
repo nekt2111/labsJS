@@ -34,6 +34,7 @@ function clickOnOtherConversation(id){
 }
 ///////////////
 
+
 function sendMessage(type) {
 
     let text
@@ -319,6 +320,12 @@ document.getElementById("interlocutor-message-input").addEventListener("keyup", 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
+if (isNaN(getCurrentDivId())){
+    document.getElementById("my-chat-form").style.display = "none"
+    document.getElementById("interlocutor-chat-form").style.display = "none"
+}
+
+
 // Вызов всех функций
 
 changeDivPos(amountOfDivs)
@@ -328,6 +335,7 @@ showAllMessages()
 changeAllLastMessage(amountOfDivs)
 let scroll = document.getElementById('chat-message-list');
 scroll.scrollTop = scroll.scrollHeight;
+
 
 
 
