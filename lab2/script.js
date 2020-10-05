@@ -3,6 +3,7 @@ let amountOfDivs = 3 // Количество собеседников
 
 // Хардкод блоков для собеседников:
 
+
 let divId0 = `<div id="listOfMyMessages" class="my-messages">
                 <div id="dateOfMyMessage" class="message-date"></div>
             </div>
@@ -319,6 +320,9 @@ document.getElementById("interlocutor-message-input").addEventListener("keyup", 
 });
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log(getCurrentDivId())
 
 if (isNaN(getCurrentDivId())){
     document.getElementById("my-chat-form").style.display = "none"
