@@ -72,9 +72,6 @@ function getCurrentDivId(){
     if(localStorage.getItem("currentDivId")){
         currentIdDiv = parseInt(localStorage.getItem("currentDivId"))
     }
-    else{
-        currentIdDiv = 0
-    }
     return currentIdDiv
 }
 
