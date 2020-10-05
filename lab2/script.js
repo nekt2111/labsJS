@@ -319,7 +319,6 @@ document.getElementById("interlocutor-message-input").addEventListener("keyup", 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-console.log(getCurrentDivId())
 
 if (isNaN(getCurrentDivId())){
     document.getElementById("my-chat-form").style.display = "none"
