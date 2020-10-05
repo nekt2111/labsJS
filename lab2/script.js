@@ -107,18 +107,19 @@ function pushNewMessageToStorage(message,date,type){
 
 function setCurrentDivId(id){
 
-    for (let a = 0; a < amountOfDivs;a++){
-        let div = document.getElementById(a.toString())
-        div.className = "conversation"
-        if(a === id){
-            div.className = "conversation active"
+    if(!isNaN(id)) {
+        for (let a = 0; a < amountOfDivs; a++) {
+            let div = document.getElementById(a.toString())
+            div.className = "conversation"
+            if (a === id) {
+                div.className = "conversation active"
+            }
         }
+
+        localStorage.setItem("currentDivId", id.toString())
+        changeDiv(id)
+        changeChatTitle()
     }
-
-    localStorage.setItem("currentDivId",id.toString())
-    changeDiv(id)
-    changeChatTitle()
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
