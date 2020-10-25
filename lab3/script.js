@@ -1,5 +1,7 @@
 
 function changeCircleColor(id){
+    
+    
     let circles = document.querySelectorAll(".choice__number")
     circles.forEach(elem => (elem.style.background = "#656565" ))
     circles[id].style.background = "#add136"
