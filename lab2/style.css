@@ -17,6 +17,10 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+body,html{
+    height: 100%;
+}
+
 
 #container{
     text-align: center;
@@ -245,6 +249,7 @@ h1{
     max-width: 70%;
     word-wrap: break-word;
 }
+
 
 .message-date{
     color: #777;

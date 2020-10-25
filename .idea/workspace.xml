@@ -7,6 +7,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -16,9 +25,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,11 +48,50 @@
       <workItem from="1601883551195" duration="452000" />
       <workItem from="1601884016457" duration="31000" />
       <workItem from="1601884064765" duration="2000" />
-      <workItem from="1601884201136" duration="224000" />
+      <workItem from="1601884201136" duration="423000" />
+      <workItem from="1601885583271" duration="2611000" />
+      <workItem from="1602161874560" duration="11000" />
+      <workItem from="1602226274542" duration="175000" />
+      <workItem from="1602227378036" duration="320000" />
+      <workItem from="1602233300897" duration="1107000" />
+      <workItem from="1602234420083" duration="3945000" />
+      <workItem from="1602750932493" duration="6000" />
+      <workItem from="1603540616294" duration="9004000" />
+      <workItem from="1603549636220" duration="56000" />
+      <workItem from="1603549704134" duration="8734000" />
+      <workItem from="1603558570685" duration="7191000" />
+      <workItem from="1603565877864" duration="13383000" />
+      <workItem from="1603616123668" duration="23506000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="729" y="256" key="#Web_Browsers" timestamp="1603563635390">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="729" y="256" key="#Web_Browsers/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1603563635390" />
+    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1603639580273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1603639580273" />
+    <state width="623" height="498" key="SwitcherDM" timestamp="1602237692684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="623" height="498" key="SwitcherDM/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1602237692684" />
+    <state x="605" y="22" width="710" height="996" key="find.popup" timestamp="1603568700644">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="22" width="710" height="996" key="find.popup/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1603568700644" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1603566062775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1603566062775" />
+    <state x="539" y="5" key="search.everywhere.popup" timestamp="1603577170774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" key="search.everywhere.popup/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1603577170774" />
   </component>
 </project>

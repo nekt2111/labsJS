@@ -4,6 +4,7 @@ let amountOfDivs = 3 // Количество собеседников
 // Хардкод блоков для собеседников:
 
 
+
 let divId0 = `<div id="listOfMyMessages" class="my-messages">
                 <div id="dateOfMyMessage" class="message-date"></div>
             </div>
@@ -293,7 +294,6 @@ function changeDiv(id){
 
 function getFormattedDate(date) {
     let options = {day: "2-digit", month: "short", hour:"2-digit",minute:"2-digit"}
-    //    return (date.getHours() + ":" + date.getMinutes() + " || " + date.getDate() + " " + getFormattedMonth(date.getMonth())).toString()
     return date.toLocaleDateString("en-GB",options)
 }
 
