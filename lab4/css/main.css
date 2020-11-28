@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     height: auto;
     width: 100%;
     display: grid;
-    grid-template: 0.07fr 1fr 0.2fr/ 1fr;
+    grid-template: 0.01fr 1fr 0.2fr/ 1fr;
     background-color: ghostwhite;
 }
 
@@ -136,6 +136,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
         .main__wrapper{
             padding: 0px 30px;
+
         }
         .header{
             padding: 0px 30px;
