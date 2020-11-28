@@ -134,6 +134,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         .elements__row{
             grid-template-columns: repeat(2,minmax(250px,450px));
         }
+        .main__wrapper{
+            padding: 0px 30px;
+        }
+        .header{
+            padding: 0px 30px;
+        }
     }
     @media (max-width: 660px) {
         .elements__row{
@@ -141,6 +147,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         }
         .header{
             padding: 0 10px;
+            font-size:15px;
+            padding: 0px 20px;
+
+        }
+        .main__wrapper{
+            padding: 0px 20px;
+        }
+    }
+    @media (max-width: 350px) {
+        .header{
+            font-size: 12px;
+            padding: 0px 10px;
+        }
+        .main__wrapper{
+            padding: 0px 10px;
         }
     }
 

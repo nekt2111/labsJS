@@ -29,13 +29,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab4/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab4/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\labsJS\labsJS\lab4\css" />
       <recent name="C:\Users\User\Documents\GitHub\labsJS\labsJS\lab4\img" />
     </key>
   </component>
@@ -73,7 +74,7 @@
       <workItem from="1603973935856" duration="19000" />
       <workItem from="1606557604576" duration="19724000" />
       <workItem from="1606578809608" duration="4240000" />
-      <workItem from="1606590387757" duration="1090000" />
+      <workItem from="1606590387757" duration="2263000" />
     </task>
     <servers />
   </component>
