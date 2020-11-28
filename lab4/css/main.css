@@ -299,19 +299,48 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     grid-gap: 20px;
 }
 
+.contacts__element{
+    display: inline;
+}
+
 .payment__logo{
-    height: 50px;
-    width: 90px;
+    margin-top: 10px;
+    height: 70px;
+
 }
 
 .payment__logos{
     display: grid;
     grid-template: 1fr/1fr 1fr;
+    grid-gap: 15px;
 }
 
 .payment__logo img{
     width: 100%;
     height: 100%;
+
+}
+
+.mastercard{
+    width: 120px;
+}
+
+.about{
+    align-self: end;
+    justify-self: center;
+}
+
+.footer__copyright{
+    justify-self: center;
+}
+
+.footer__link{
+    transition-duration: 0.2s;
+    color: gray;
+}
+
+.footer__link:hover{
+    color: white;
 }
 
 @media (max-width: 1000px) {
