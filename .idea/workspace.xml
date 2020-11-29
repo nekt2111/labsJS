@@ -74,7 +74,10 @@
       <workItem from="1603973935856" duration="19000" />
       <workItem from="1606557604576" duration="19724000" />
       <workItem from="1606578809608" duration="4240000" />
-      <workItem from="1606590387757" duration="2952000" />
+      <workItem from="1606590387757" duration="11661000" />
+      <workItem from="1606603993944" duration="2233000" />
+      <workItem from="1606606242922" duration="948000" />
+      <workItem from="1606607203407" duration="1162000" />
     </task>
     <servers />
   </component>
@@ -98,10 +101,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1602237692684" />
-    <state x="-1311" y="331" width="1193" height="865" key="dock-window-1" timestamp="1606578953197">
-      <screen x="-1440" y="176" width="1440" height="860" />
+    <state x="848" y="50" width="1079" height="993" key="dock-window-1" timestamp="1606601346551">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="331" width="1193" height="865" key="dock-window-1/0.0.1920.1040/-1440.176.1440.860@-1440.176.1440.860" timestamp="1606578953197" />
+    <state x="848" y="50" width="1079" height="993" key="dock-window-1/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606601346551" />
     <state x="735" y="48" width="734" height="865" key="dock-window-2" timestamp="1606579114919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
