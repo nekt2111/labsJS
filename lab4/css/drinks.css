@@ -1,0 +1,28 @@
+
+
+
+.element{
+    display: grid;
+    grid-template: 1fr 0.15fr 0.3fr 0.3fr/1fr;
+}
+
+.element__title{
+    font-size:18px;
+}
+
+.element__logo{
+    margin-left: 16%;
+}
+
+
+
+.element__logo img{
+    width: 80%;
+}
+
+.element__description{
+    display: grid;
+    grid-template: 1fr/1fr;
+    justify-items: center;
+    align-items: center;
+}

@@ -1,0 +1,4 @@
+
+.element__size{
+    grid-template: 1fr/1fr;
+}
