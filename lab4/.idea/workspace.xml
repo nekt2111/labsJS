@@ -46,7 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -60,7 +60,7 @@
       <updated>1606557584929</updated>
       <workItem from="1606557585967" duration="18000" />
       <workItem from="1606733971336" duration="8683000" />
-      <workItem from="1606742670567" duration="6624000" />
+      <workItem from="1606742670567" duration="12148000" />
     </task>
     <servers />
   </component>
@@ -80,9 +80,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1606557602256">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-925" y="354" key="FileChooserDialogImpl" timestamp="1606766414742">
+      <screen x="-1440" y="176" width="1440" height="860" />
     </state>
+    <state x="-925" y="354" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@-1440.176.1440.860" timestamp="1606766414742" />
     <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606557602256" />
   </component>
 </project>

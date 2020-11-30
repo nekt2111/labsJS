@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .blank__input input{
 }
 
-.blank__input[type="text"]{
+.blank__input[type="text"],[type="email"],[type="number"]{
     font-family: "Open Sans",sans-serif;
     font-size: 15px;
 }
