@@ -29,7 +29,7 @@ const view = (products,productId) => `
                             </div>
                             <div class="other__name">${otherProduct.name}</div>
                         </div>
-                        ` )}
+                        ` ).join("")}
                     </div>
                 </div>
               

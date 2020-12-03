@@ -76,21 +76,232 @@
       "price": 138.99,
       "currency": "грн",
       "relatedProductsIds": [1,2,3,6,5]
+    },
+    {
+      "id": 8,
+      "name": "Карбонара ",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "ingredients": "Лук, Бекон, Ветчина",
+      "categoryId": 2,
+      "recommended": true,
+      "price": 152.99,
+      "currency": "грн",
+      "relatedProductsIds": [1,2,4,6,5]
+    },
+    {
+      "id": 9,
+      "name": "Прованс",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "ingredients": "Бергадер Блю, Ветчина",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 175.99,
+      "currency": "грн",
+      "relatedProductsIds": [1,2,7,6,5]
+    },
+    {
+      "id": 10,
+      "name": "Пять Сыров",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "ingredients": "Фета, Пармезан, Соус",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 187.99,
+      "currency": "грн",
+      "relatedProductsIds": [1,2,4,9,5]
+    },
+    {
+      "id": 11,
+      "name": "Тунец ",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "ingredients": "Моцарелла, Тунец",
+      "categoryId": 3,
+      "recommended": false,
+      "price": 171.99,
+      "currency": "грн",
+      "relatedProductsIds": [1,10,4,8,5]
     }
+
     ],
-  "drinks": [{
+  "drinks": [
+    {
+      "id": 1,
+      "name": "BonAqua г",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 24,
+      "currency": "грн",
+      "relatedProductsIds": [2,3,4]
 
-  }],
-  "sides": [{
+    },
+    {
+      "id": 2,
+      "name": "BonAqua н/г",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 24,
+      "currency": "грн",
+      "relatedProductsIds": [1,3,4]
+    },
+    {
+      "id": 3,
+      "name": "Coca-Cola",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 1,
+      "recommended": true,
+      "price": 24,
+      "currency": "грн",
+      "relatedProductsIds": [1,2,4]
+    },
+    {
+      "id": 4,
+      "name": "Fanta",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 24,
+      "currency": "грн",
+      "relatedProductsIds": [1,3,2]
+    },
+    {
+      "id": 5,
+      "name": "Sprite",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 24,
+      "currency": "грн",
+      "relatedProductsIds": [1,3,5]
+    },
+    {
+      "id": 6,
+      "name": "Rich Яблоко",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 2,
+      "recommended": false,
+      "price": 46,
+      "currency": "грн",
+      "relatedProductsIds": [1,3,4]
+    },
+    {
+      "id": 7,
+      "name": "Rich Апельсин",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 2,
+      "recommended": false,
+      "price": 46,
+      "currency": "грн",
+      "relatedProductsIds": [3,4,6]
+    }
+  ],
+  "sides": [
+    {
+      "id": 1,
+      "name": "Куриные стрипсы",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 1,
+      "recommended": false,
+      "price": 119.99,
+      "currency": "грн",
+      "relatedProductsIds": [5,4,6]
+    },
+    {
+      "id": 2,
+      "name": "Куриные крылишки",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 2,
+      "recommended": false,
+      "price": 119.99,
+      "currency": "грн",
+      "relatedProductsIds": [1,4,6]
+    },
+    {
+      "id": 3,
+      "name": "Хлебцы с паперони",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 2,
+      "recommended": false,
+      "price": 119.99,
+      "currency": "грн",
+      "relatedProductsIds": [6,4,1]
 
-  }],
+    },
+    {
+      "id": 4,
+      "name": "Хлебцы с баварскими колбасками",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 2,
+      "recommended": false,
+      "price": 119.99,
+      "currency": "грн",
+      "relatedProductsIds": [3,4,2]
+    },
+    {
+      "id": 5,
+      "name": "Салат с шпинатом",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 3,
+      "recommended": false,
+      "price": 84.99,
+      "currency": "грн",
+      "relatedProductsIds": [3,4,6]
+    },
+    {
+      "id": 6,
+      "name": "Салат с курицей",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "categoryId": 3,
+      "recommended": false,
+      "price": 84.99,
+      "currency": "грн",
+      "relatedProductsIds": [3,5,1]
+    }
+  ],
 
   "deserts": [{
-
+    "id": 1,
+    "name": "Шоколадный маффин",
+    "imgLogo": "img/pizza/Havai.jpg",
+    "recommended": false,
+    "price": 32.99,
+    "currency": "грн",
+    "relatedProductsIds": [2]
+  },{
+    "id": 2,
+    "name": "Лава кейк",
+    "imgLogo": "img/pizza/Havai.jpg",
+    "recommended": false,
+    "price": 59.99,
+    "currency": "грн",
+    "relatedProductsIds": [1]
   }],
 
-  "sales": [{
 
-  }]
+  "sales": [{
+    "id": 1,
+    "name": "Сумасшедший вторник",
+    "date": "25-03-2020",
+    "imgLogo": "img/pizza/Havai.jpg",
+    "recommended": true,
+    "description": "Каждый вторник Domino's проводит невероятную акцию «Сумасшедший вторник» - покупай одну среднюю или большую пиццу и получай вторую со скидкой 80%! В акции не участвуют маленькие пиццы. Согласно условиям акции, пицца со скидкой должна быть из меню без добавления ингредиентов. Акция действует на доставку, и для заказов, которые можно будет получить возле точки адресной доставки (у входа в пиццерию). Скидка предоставляется на меньший товар в чеке. Акция не суммируется с другими акционными предложениями. Категория пицц \"Лучшая цена\" является акционным предложением, которое не работает во вторник. Во вторник пиццы категории \"Лучшая цена\" переходят в категорию пицц \"Классические\". С акцией вторника бонусы не списываются, только начисляются."
+  },
+    {
+      "id": 2,
+      "name": "30% на каждую вторую пиццу",
+      "date": "11-09-2020",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "recommended": true,
+      "description": "Заказывай каждую вторую пиццу со скидкой -30%! Акция распространяется на пиццы среднего и большого размера на любом типе теста. Акция действует на доставку, на заказы в пиццерии и с собой. Скидка предоставляется на самый дешевый товар в чеке. Акция не суммируется с другими акционными предложениями. Условия программы лояльности Domino`s Club распространяются на акционное предложение. К акционной пиццы есть возможность добавить борты «Филадельфия» и «Хот-дог»."
+  },{
+      "id": 3,
+      "name": "Black Friday -50% на пиццу!",
+      "date": "25-11-2020",
+      "imgLogo": "img/pizza/Havai.jpg",
+      "recommended": true,
+      "description": "Черная пятница в Domino`s! А, следовательно, все пушистые лапки получат выгодную скидку на свою любимую пиццу! С 27.11. по 29.11. покупай каждую вторую пиццу со скидкой -50%! Акция распространяется на средние и большие пиццы. В акции не участвуют маленькие пиццы. Акция действует при заказе в пиццериях, на вынос или доставку. Скидка предоставляется на более дешевый товар в чеке. Акция не суммируется с другими акционными предложениями. Бортики «Филадельфия» и «Хот-дог» к акционным пиццам добавляются. Акция действует на пиццы по собственному рецепту. Акция действует на пиццы, которые состоят из двух разных половинок пицц. Условия программы лояльности Domino`s Club распространяются на акционное предложение."
+
+    }]
 
 }
