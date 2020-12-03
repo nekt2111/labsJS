@@ -1,8 +1,13 @@
+import Client from "./client.js";
+
+let client = new Client();
+
 
 class Router{
-    getCurrentState(){
+    async getCurrentState(){
         let fileName;
         let viewName;
+        let id;
         let location = window.location.hash.split("#")[1];
         if(!location.includes('/')) {
             switch (location) {
@@ -21,10 +26,6 @@ class Router{
                 case "sales":
                     fileName = "sales"
                     viewName = "sales"
-                    break;
-                case "sale":
-                    fileName = "sale"
-                    viewName = "black-friday"
                     break;
                 case "sides":
                     fileName = "sides"
@@ -52,13 +53,46 @@ class Router{
             }
         }
         else{
-            
-        }
+            const tempId = location.split('/')[1];
+            const exists = await client.idExists('products',parseInt(tempId));
+            console.log(exists)
+            if(!exists){
+                fileName = "index";
+                viewName = "";
+            }
+            else{
 
-       return {
+                id = tempId;
+
+                switch (location.split('/')[0]) {
+                    case "drinks":
+                        fileName = "product"
+                        viewName = "drinks" + "/" + id
+                        break;
+                    case "pizzas":
+                        fileName = "product"
+                        viewName = "pizzas" + "/"  + id
+                        break;
+                    case "sales":
+                        fileName = "product"
+                        viewName = "sales" + "/" + id
+                        break;
+                    case "sides":
+                        fileName = "product"
+                        viewName = "sides" + "/" + id
+                        break;
+                    case "deserts":
+                        fileName = "product"
+                        viewName = "deserts" + "/" + id
+                        break;
+                }
+            }
+        }
+        return {
             fileName,
-            viewName
-       }
+            viewName,
+            id
+        }
     }
 }
 

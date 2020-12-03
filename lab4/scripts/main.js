@@ -1,28 +1,35 @@
 
 import TemplateProcessor from "./templateProccesor.js";
 import Router from "./router.js";
+import Client from "./client.js";
 
 const router = new Router()
 const templateProcessor = new TemplateProcessor()
+const client = new Client()
 
-function load(){
-    let {fileName,viewName} = router.getCurrentState()
-    change(fileName)
-    fetch('https://my-json-server.typicode.com/nekt2111/labsJS/products').then((response) => {
-        return response.json();
-    })
-        .then((data) => {
-            console.log(data[0].id)
-        });
+
+
+
+async function load(){
+    let {fileName,viewName,id} = await router.getCurrentState()
+    await change(fileName,viewName,id)
 }
 
 
-
-
-
-
-function change(fileName) {
-    import(`./views/${fileName}Page.js`).then((view) => templateProcessor.render(view.default))
+let view;
+async function change(fileName,viewName,id) {
+    await import(`./views/${fileName}Page.js`).then((viewModule) => {
+        view = viewModule.default;
+        return client.getDataCatalog("products");
+    })
+        .then((data) => {
+            if(id !== undefined) {
+                templateProcessor.render(view(data[id - 1]))
+            }
+            else{
+                templateProcessor.render(view);
+            }
+        })
 }
 
 window.onhashchange = load

@@ -1,4 +1,4 @@
-const view = `
+const view = (product) => `
  <div class="product__wrapper">
                 <div class="product__column-1">
                     <div class="product__logo-wrapper">
@@ -10,7 +10,7 @@ const view = `
 
                 <div class="product__column-2">
                     <div class="product__main-description">
-                        <div class="product__main-title">Пицца Маргарита</div>
+                        <div class="product__main-title">Пицца ${product.name}</div>
                         <div class="product__ingridients">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate magnam officiis quia. Corporis dolore ex odit quo quos, ullam?</div>
                         <div class="product__buy">
                             <div class="product__main-price"><span class="product-price__number">100.99</span><span

@@ -1,7 +1,22 @@
 
-fetch('https://my-json-server.typicode.com/nekt2111/labsJS/products').then((response) => {
-    return response.json();
-})
-    .then((data) => {
-        console.log(data);
-    });
+class Client {
+    async getDataCatalog(catalog) {
+        return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/${catalog}`).then((response) => {
+            return response.json();
+        });
+    }
+    async idExists(catalog,id){
+       return await this.getDataCatalog(catalog).then((data) => {
+            for (let i = 0; i <data.length ; i++) {
+                if(data[i].id === parseInt(id)){
+                    return true;
+                }
+            }
+            return false;
+        })
+    }
+}
+
+
+
+export default Client
