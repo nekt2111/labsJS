@@ -19,7 +19,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81df9019-fc4b-4088-9186-65ade13daf8b" name="Default Changelist" comment="" />
+    <list default="true" id="81df9019-fc4b-4088-9186-65ade13daf8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/drinks.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/drinks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sale.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/sales.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sales.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/status.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/deserts.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/deserts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/drinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/drinks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/pizzas.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/pizzas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/sale.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/sides.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sides.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +52,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,6 +84,10 @@
       <workItem from="1606557585967" duration="18000" />
       <workItem from="1606733971336" duration="8683000" />
       <workItem from="1606742670567" duration="12148000" />
+      <workItem from="1607001364039" duration="1732000" />
+      <workItem from="1607004008096" duration="39000" />
+      <workItem from="1607004115394" duration="643000" />
+      <workItem from="1607012305686" duration="1811000" />
     </task>
     <servers />
   </component>
@@ -78,12 +105,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-925" y="354" key="FileChooserDialogImpl" timestamp="1606766414742">
-      <screen x="-1440" y="176" width="1440" height="860" />
-    </state>
-    <state x="-925" y="354" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@-1440.176.1440.860" timestamp="1606766414742" />
-    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606557602256" />
   </component>
 </project>

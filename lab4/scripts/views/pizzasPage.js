@@ -1,42 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Chepino`s Pizza</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <div class="logo"> <img src="../img/Pngtreeend_pizza_chef_2640834.png" alt="" class=""></div>
-                <div class="logo__text"> <a href="../index.html" style="color:white;">Chepino`s Pizza</a></div>
-            </div>
-            <nav class="header__nav">
-                <ul class="nav__list">
-                    <li class="nav__element"><a class="nav__link" href="../html/sales.html">Акции</a></li>
-                    <li class="nav__element"><a class="nav__link" href="../html/pizzas.html">Пицца</a></li>
-                    <li class="nav__element"><a class="nav__link" href="../html/drinks.html">Напитки</a></li>
-                    <li class="nav__element"><a class="nav__link" href="../html/sides.html">Сайды</a></li>
-                    <li class="nav__element"><a class="nav__link" href="../html/deserts.html">Десерты</a></li>
-                </ul>
-            </nav>
-            <div class="header__cart"><img src="../img/shopping-cart.png" alt="cart"></div>
-            <div class="header__burger"></div>
-        </header>
-        <main>
-            <div class="main__wrapper">
+
+const view =
+    ` 
+           <div class="main__wrapper">
                     <div class="best__title title"><h2>Пицца: Лучшая Цена</h2></div>
                     <div class="best__row elements__row">
                         <div class="best__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -46,15 +23,15 @@
                             </div>
                         </div>
                         <div class="best__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -63,15 +40,15 @@
                             </div>
                         </div>
                         <div class="best__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -80,15 +57,15 @@
                             </div>
                         </div>
                         <div class="best__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -100,15 +77,15 @@
                     <div class="classic__title title"><h2>Пицца: Классические </h2></div>
                     <div class="classic__row elements__row">
                         <div class="classic__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -117,15 +94,15 @@
                             </div>
                         </div>
                         <div class="classic__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -134,15 +111,15 @@
                             </div>
                         </div>
                         <div class="classic__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -151,15 +128,15 @@
                             </div>
                         </div>
                         <div class="classic__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -171,15 +148,15 @@
                     <div class="firm__title title"><h2>Пицца: Фирменные </h2></div>
                     <div class="firm__row elements__row">
                         <div class="firm__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -188,15 +165,15 @@
                             </div>
                         </div>
                         <div class="firm__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -205,15 +182,15 @@
                             </div>
                         </div>
                         <div class="firm__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -222,15 +199,15 @@
                             </div>
                         </div>
                         <div class="firm__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -239,15 +216,15 @@
                             </div>
                         </div>
                         <div class="firm__element element">
-                            <div class="element__logo"><img src="../img/pizza/Margarita.jpg" alt="Paperoni"></div>
+                            <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(`size__small`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(`size__medium`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(`size__big`)">Большая</div>
+                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
+                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
+                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">100.99</span><span
@@ -257,47 +234,6 @@
                         </div>
                     </div>
             </div>
-        </main>
-        <footer>
-            <div class="footer__wrapper">
-                <div class="footer__element">
-                    <h2 class="element__title footer__title">Chepino`s Pizza</h2>
-                    <ul class="footer__info-list">
-                        <li class="info-list__element "><a class="footer__link " href="">Меню</a></li>
-                        <li class="info-list__element "><a class="footer__link" href="">Пицерии</a></li>
-                        <li class="info-list__element "><a class="footer__link" href="">Франчайзинг</a></li>
-                        <li class="info-list__element "><a class="footer__link" href="">Информация по содержанию аллергенов и пищевая
-                            ценность</a></li>
-                    </ul>
-                </div>
-                <div class="footer__element">
-                    <h2 class="element__title footer__title">Контакты</h2>
-                    <ul class="footer__contacts">
-                        <li class="contacts__element"><a class="footer__link" href="">info@chepinos.ua</a></li>
-                        <li class="contacts__element"><a class="footer__link" href="">Оставить отзыв</a></li>
-                        <li class="contacts__element"><a class="footer__link" href="">044 333 12 12</a></li>
-                    </ul>
-                </div>
-                <div class="footer__element">
-                    <h2 class="element__title footer__title" >Поддержка платежей</h2>
-                    <div class="payment__logos">
-                        <div class="payment__logo">
-                            <img src="../img/visa-card-and-mastercard-logo-png-28.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__element about">
-                    <div class="footer__about">
-                        <div class="footer__logo"></div>
-                        <div class="footer__copyright">@chepinos.pizza nekt2111@github.io</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-</head>
-<script src="../scripts/main.js"></script>
-<body>
+        `
 
-</body>
-</html>
+export default view;

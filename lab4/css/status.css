@@ -1,18 +1,6 @@
 
-.wrapper{
-    height: auto;
-}
 
-main{
-    padding: 0 100px;
-}
 
-@media (max-width: 600px) {
-    main{
-        padding: 0 20px;
-    }
-
-}
 
 .status{
     height: 100%;

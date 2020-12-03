@@ -1,14 +1,19 @@
 {
   "products": [{
-    "url": "pizza_mozzarella",
-    "productName": "Pizza Mozzarella",
-    "productDescription": "About Pizza ... ",
-    "price": 155.05,
-    "images": ["path/to/cdn.jpg", "relative/path/to/img.jpg"],
-    "weight": 250,
-    "relatedProductIds": [7,12,98],
-    "spicy": false,
-    "categoryId": 3,
-    "recommended": true
-  }]
+    "productName": "Маргарита",
+    "productDescription": "Моцарела, Соус, Бекон, Ветчина",
+    "price": 109.99,
+    "categoryId": 2,
+    "recommended": true,
+    "id": 1
+  },
+    {
+      "productName": "Маргарита2",
+      "productDescription": "Моцарела, Соус, Бекон, Ветчина",
+      "price": 109.99,
+      "categoryId": 2,
+      "recommended": true,
+      "id": 2
+
+    }]
 }

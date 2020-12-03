@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="" />
+    <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/drinks.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/drinks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/sale.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/sale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/sales.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/sales.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/side.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/css/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/status.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/deserts.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/deserts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/drinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/drinks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/pizzas.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/pizzas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/sale.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/sale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/sales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/sides.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/sides.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/html/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +33,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,6 +58,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\labsJS\labsJS\lab4\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\GitHub\labsJS\labsJS\lab4\css" />
       <recent name="C:\Users\User\Documents\GitHub\labsJS\labsJS\lab4\img" />
@@ -82,7 +108,17 @@
       <workItem from="1606663987914" duration="13567000" />
       <workItem from="1606677575362" duration="686000" />
       <workItem from="1606691702849" duration="24000" />
-      <workItem from="1606766417194" duration="214000" />
+      <workItem from="1606766417194" duration="4948000" />
+      <workItem from="1606828110941" duration="13032000" />
+      <workItem from="1606841251614" duration="8411000" />
+      <workItem from="1606849678540" duration="2527000" />
+      <workItem from="1606852218118" duration="214000" />
+      <workItem from="1606852441784" duration="274000" />
+      <workItem from="1606852726665" duration="710000" />
+      <workItem from="1606853453738" duration="5435000" />
+      <workItem from="1606907632035" duration="635000" />
+      <workItem from="1606916646047" duration="22000" />
+      <workItem from="1607018676607" duration="275000" />
     </task>
     <servers />
   </component>
@@ -98,10 +134,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606666368264" />
-    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1603973953172">
+    <state x="687" y="215" key="FileChooserDialogImpl" timestamp="1606916666351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1603973953172" />
+    <state x="687" y="215" key="FileChooserDialogImpl/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606916666351" />
     <state x="351" y="78" key="SettingsEditor" timestamp="1606562084822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -110,15 +146,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1602237692684" />
-    <state x="848" y="50" width="1079" height="993" key="dock-window-1" timestamp="1606601346551">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-1" timestamp="1606845721559">
+      <screen x="-1440" y="176" width="1440" height="860" />
     </state>
     <state x="-1311" y="331" width="1193" height="865" key="dock-window-1/0.0.1920.1040/-1440.176.1440.860@-1440.176.1440.860" timestamp="1606578953197" />
-    <state x="848" y="50" width="1079" height="993" key="dock-window-1/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606601346551" />
-    <state x="735" y="48" width="734" height="865" key="dock-window-2" timestamp="1606579114919">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-1/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606845721559" />
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-2" timestamp="1606845721559">
+      <screen x="-1440" y="176" width="1440" height="860" />
     </state>
     <state x="735" y="48" width="734" height="865" key="dock-window-2/0.0.1920.1040/-1440.176.1440.860@-1440.176.1440.860" timestamp="1606579114919" />
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-2/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606845721559" />
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-3" timestamp="1606845814326">
+      <screen x="-1440" y="176" width="1440" height="860" />
+    </state>
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-3/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606845814326" />
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-4" timestamp="1606846089514">
+      <screen x="-1440" y="176" width="1440" height="860" />
+    </state>
+    <state x="-1440" y="176" width="1456" height="961" key="dock-window-4/0.0.1920.1040/-1440.176.1440.860@0.0.1920.1040" timestamp="1606846089514" />
     <state x="605" y="22" width="710" height="996" key="find.popup" timestamp="1603568700644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
