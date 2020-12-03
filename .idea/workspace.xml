@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lab4/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/drinks.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/drinks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/sale.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/sale.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/sales.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/sales.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/side.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/status.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/deserts.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/deserts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/drinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/drinks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/pizzas.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/pizzas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/sale.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/sale.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/sides.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/sides.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/html/status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,12 +99,23 @@
       <workItem from="1606853453738" duration="5435000" />
       <workItem from="1606907632035" duration="635000" />
       <workItem from="1606916646047" duration="22000" />
-      <workItem from="1607018676607" duration="275000" />
+      <workItem from="1607018676607" duration="576000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="729" y="256" key="#Web_Browsers" timestamp="1603563635390">
