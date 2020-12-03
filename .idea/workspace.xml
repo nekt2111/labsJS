@@ -5,8 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/pizzasPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/pizzasPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/test-json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -102,7 +101,8 @@
       <workItem from="1606907632035" duration="635000" />
       <workItem from="1606916646047" duration="22000" />
       <workItem from="1607018676607" duration="8536000" />
-      <workItem from="1607027264159" duration="2064000" />
+      <workItem from="1607027264159" duration="5375000" />
+      <workItem from="1607032688494" duration="357000" />
     </task>
     <servers />
   </component>

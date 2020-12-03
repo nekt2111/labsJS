@@ -30,7 +30,7 @@ async function change(fileName,catalogName,id) {
                 templateProcessor.render(view(data,id-1))
             }
             else{
-                templateProcessor.render(view);
+                templateProcessor.render(view(data));
             }
         })
 }
