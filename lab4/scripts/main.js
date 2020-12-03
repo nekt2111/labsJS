@@ -12,7 +12,7 @@ function load(){
         return response.json();
     })
         .then((data) => {
-            console.log(data[0].url)
+            console.log(data[0].id)
         });
 }
 

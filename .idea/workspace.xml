@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lab4/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/db.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,7 @@
       <workItem from="1606853453738" duration="5435000" />
       <workItem from="1606907632035" duration="635000" />
       <workItem from="1606916646047" duration="22000" />
-      <workItem from="1607018676607" duration="576000" />
+      <workItem from="1607018676607" duration="796000" />
     </task>
     <servers />
   </component>

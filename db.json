@@ -1,0 +1,17 @@
+
+{
+  "products": [{
+    "name": "Маргарита",
+"id": 1,
+"spicy": false,
+"categoryId": 3,
+"recommended": true
+},
+    {
+      "name": "Маргарита1",
+      "id": 2,
+      "spicy": false,
+      "categoryId": 3,
+      "recommended": true
+    }]
+}
