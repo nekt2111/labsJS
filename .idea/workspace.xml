@@ -4,9 +4,6 @@
     <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Гавайська_300dpi-min-thumbnail-960x960-70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/img/pizza/Havai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Пепперони_и_томаты_300dpi-thumbnail-960x960-70.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/img/pizza/PaperoniTom.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" afterDir="false" />
@@ -104,7 +101,8 @@
       <workItem from="1606853453738" duration="5435000" />
       <workItem from="1606907632035" duration="635000" />
       <workItem from="1606916646047" duration="22000" />
-      <workItem from="1607018676607" duration="8072000" />
+      <workItem from="1607018676607" duration="8536000" />
+      <workItem from="1607027264159" duration="2064000" />
     </task>
     <servers />
   </component>
@@ -121,5 +119,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -6,26 +6,26 @@ let client = new Client();
 class Router{
     async getCurrentState(){
         let fileName;
-        let viewName;
+        let catalogName;
         let id;
         let location = window.location.hash.split("#")[1];
         if(!location.includes('/')) {
             switch (location) {
                 case "":
                     fileName = "index"
-                    viewName = ""
+                    catalogName = ""
                     break;
                 case "drinks":
                     fileName = "drinks"
-                    viewName = "drinks"
+                    catalogName = "drinks"
                     break;
                 case "pizzas":
                     fileName = "pizzas"
-                    viewName = "pizzas"
+                    catalogName = "pizzas"
                     break;
                 case "sales":
                     fileName = "sales"
-                    viewName = "sales"
+                    catalogName = "sales"
                     break;
                 case "sides":
                     fileName = "sides"
@@ -33,32 +33,29 @@ class Router{
                     break;
                 case "cart":
                     fileName = "cart"
-                    viewName = "cart"
+                    catalogName = "cart"
                     break;
                 case "status":
                     fileName = "status"
-                    viewName = "status"
+                    catalogName = "status"
                     break;
                 case "deserts":
                     fileName = "deserts"
-                    viewName = "deserts"
-                    break;
-                case "product":
-                    fileName = "product"
+                    catalogName = "deserts"
                     break;
                 default:
                     fileName = "index"
-                    viewName = ""
+                    catalogName = ""
                     break;
             }
         }
         else{
             const tempId = location.split('/')[1];
-            const exists = await client.idExists('products',parseInt(tempId));
+            const exists = await client.idExists(location.split('/')[0],parseInt(tempId));
             console.log(exists)
             if(!exists){
                 fileName = "index";
-                viewName = "";
+                catalogName = "";
             }
             else{
 
@@ -67,30 +64,30 @@ class Router{
                 switch (location.split('/')[0]) {
                     case "drinks":
                         fileName = "product"
-                        viewName = "drinks" + "/" + id
+                        catalogName = "drinks"
                         break;
                     case "pizzas":
                         fileName = "product"
-                        viewName = "pizzas" + "/"  + id
+                        catalogName = "pizzas"
                         break;
                     case "sales":
                         fileName = "product"
-                        viewName = "sales" + "/" + id
+                        catalogName = "sales"
                         break;
                     case "sides":
                         fileName = "product"
-                        viewName = "sides" + "/" + id
+                        catalogName = "sides"
                         break;
                     case "deserts":
                         fileName = "product"
-                        viewName = "deserts" + "/" + id
+                        catalogName = "deserts"
                         break;
                 }
             }
         }
         return {
             fileName,
-            viewName,
+            catalogName,
             id
         }
     }
