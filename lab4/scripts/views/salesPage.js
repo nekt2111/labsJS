@@ -2,7 +2,7 @@ const view = (sales) => `<div class="main__wrapper">
         <div class="sales__list">
             ${sales.map(sale => `
             <div class="sales-main__element">
-                <div class="sales-main__logo"><img src=${sale.imgLogo}alt=""></div>
+                <div class="sales-main__logo"><img src=${sale.imgLogo} alt=""></div>
                 <div class="sales-main__description">
                     <div class="sales-main__date">${sale.date}</div>
                     <div class="sales-main__title">${sale.name}</div>

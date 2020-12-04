@@ -5,7 +5,7 @@ const view = (object) => `
                     <div class="sales__row elements__row">
                     ${Object.entries(object).filter(([key]) => key === "sales" )[0][1].filter(sale => sale.recommended === true).map(sale => `
                     <div class="sales__element sale">
-                            <div class="sale__logo"><img src=${sale.logoImg} alt="Paperoni"></div>
+                            <div class="sale__logo"><img src=${sale.imgLogo} alt="Paperoni"></div>
                             <div class="sale__description">
                                 <div class="sale__title"><h3><a style="color:black" href="html/product.html">${sale.name}</a></h3></div>
                                 <div class="sale__information">${sale.description}</div>
