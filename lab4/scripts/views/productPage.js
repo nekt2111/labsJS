@@ -24,7 +24,7 @@ const view = (products,productId) => `
                     <div class="others__title">Другие товары:</div>
                     <div class="others__products-raw">
                     ${products.filter(product => products[productId].relatedProductsIds.includes(product.id)).map((otherProduct) =>`
-                        <div class="other__product">
+                        <div class="other__product link" onclick="window.location.hash = window.location.hash.split('/')[0] + '/' + ${otherProduct.id}">
                             <div class="other__logo"><img src=${otherProduct.imgLogo} alt="">
                             </div>
                             <div class="other__name">${otherProduct.name}</div>

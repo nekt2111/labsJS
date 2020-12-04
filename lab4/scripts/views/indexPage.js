@@ -1,12 +1,12 @@
 
-const view = `
+const view = (products) => `
     <div class="main__wrapper">
                     <div class="sales__title title"><h2>Акции</h2></div>
                     <div class="sales__row elements__row">
                         <div class="sales__element element">
                             <div class="element__logo"><img src="img/pizza/Margarita.jpg" alt="Paperoni"></div>
                             <div class="element__description">
-                                <div class="element__title"><h3><a style="color:black" href="html/product.html">Пицца Маргарита</a></h3></div>
+                                <div class="element__title"><h3>Пицца Маргарита</h3></div>
                                 <div class="element__information">Моцарела, Соус, Бекон, Ветчина</div>
                             </div>
                             <div class="element__size">

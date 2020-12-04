@@ -7,7 +7,7 @@ const view = (products) =>
                         ${products.filter((product) => product.categoryId === 1).map((rowProduct) => `<div class="best__element element">
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
-                                <div class="element__title"><h3>${rowProduct.name}</h3></div>
+                                <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
                             <div class="element__size">
@@ -28,7 +28,7 @@ const view = (products) =>
                     ${products.filter((product) => product.categoryId === 2).map((rowProduct) => `<div class="best__element element">
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
-                                <div class="element__title"><h3>${rowProduct.name}</h3></div>
+                                <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
                             <div class="element__size">
@@ -51,7 +51,7 @@ const view = (products) =>
                         <div class="best__element element">
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
-                                <div class="element__title"><h3>${rowProduct.name}</h3></div>
+                                <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
                             <div class="element__size">

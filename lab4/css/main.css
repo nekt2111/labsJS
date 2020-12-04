@@ -25,6 +25,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     grid-template: 0.01fr 1fr 0.01fr/ 1fr;
 }
 
+.link{
+    cursor: pointer;
+}
 
 /*Header*/
 

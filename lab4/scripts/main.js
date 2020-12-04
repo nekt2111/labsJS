@@ -7,12 +7,28 @@ const router = new Router()
 const templateProcessor = new TemplateProcessor()
 const client = new Client()
 
+const headerLinks = ['#sales','#pizzas','#drinks','#sides','#deserts']
+
 
 
 
 async function load(){
     let {fileName,catalogName,id} = await router.getCurrentState()
     await change(fileName,catalogName,id)
+    document.querySelector('.logo img').addEventListener('click',() => {
+        window.location.hash = "";
+    })
+    document.querySelector('.logo__text').addEventListener('click',() => {
+        window.location.hash = "";
+    })
+    for (let i = 0; i < headerLinks.length; i++) {
+        document.querySelectorAll('.nav__link')[i].addEventListener('click',() => {
+            window.location.hash = headerLinks[i]
+        })
+    }
+    document.querySelector('.header__cart').addEventListener('click',() => {
+        window.location.hash = "#cart";
+    })
 }
 
 
@@ -23,7 +39,7 @@ async function change(fileName,catalogName,id) {
         console.log(fileName)
         console.log(catalogName)
         console.log(id)
-        return client.getDataCatalog("pizzas");
+        return client.getDataCatalog(catalogName);
     })
         .then((data) => {
             if(id !== undefined) {

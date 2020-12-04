@@ -1,5 +1,5 @@
 
-const view = `<div class="main__wrapper cart-main__wrapper">
+const view = () =>`<div class="main__wrapper cart-main__wrapper">
                 <div class="order-registration">
                     <div class="order-registration__title cart-title"><h2>Оформление заказа</h2></div>
                     <form class="order__registration-blank">

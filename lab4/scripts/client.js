@@ -1,9 +1,12 @@
 
 class Client {
     async getDataCatalog(catalog) {
-        return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/${catalog}`).then((response) => {
-            return response.json();
-        });
+        if(catalog !== undefined && catalog.length !== 0) {
+            console.log(catalog)
+            return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/${catalog}`).then((response) => {
+                return response.json();
+            });
+        }
     }
     async idExists(catalog,id){
        return await this.getDataCatalog(catalog).then((data) => {

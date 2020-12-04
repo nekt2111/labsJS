@@ -9,6 +9,9 @@ class Router{
         let catalogName;
         let id;
         let location = window.location.hash.split("#")[1];
+        if(location === undefined){
+            location = ""
+        }
         if(!location.includes('/')) {
             switch (location) {
                 case "":
@@ -29,15 +32,15 @@ class Router{
                     break;
                 case "sides":
                     fileName = "sides"
-                    fileName = "sides"
+                    catalogName = "sides"
                     break;
                 case "cart":
                     fileName = "cart"
-                    catalogName = "cart"
+                    catalogName = ""
                     break;
                 case "status":
                     fileName = "status"
-                    catalogName = "status"
+                    catalogName = ""
                     break;
                 case "deserts":
                     fileName = "deserts"
@@ -71,7 +74,7 @@ class Router{
                         catalogName = "pizzas"
                         break;
                     case "sales":
-                        fileName = "product"
+                        fileName = "sale"
                         catalogName = "sales"
                         break;
                     case "sides":
