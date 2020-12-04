@@ -157,7 +157,7 @@
     {
       "id": 1,
       "name": "Куриные стрипсы",
-      "imgLogo": "img/sides/streeps.jps",
+      "imgLogo": "img/side/streeps.jps",
       "categoryId": 1,
       "recommended": false,
       "price": 119.99,
@@ -167,7 +167,7 @@
     {
       "id": 2,
       "name": "Куриные крылишки",
-      "imgLogo": "img/sides/krill.jpg",
+      "imgLogo": "img/side/krill.jpg",
       "categoryId": 1,
       "recommended": false,
       "price": 119.99,
@@ -177,7 +177,7 @@
     {
       "id": 3,
       "name": "Хлебцы с паперони",
-      "imgLogo": "img/sides/xleb.jpg",
+      "imgLogo": "img/side/xleb.jpg",
       "categoryId": 2,
       "recommended": false,
       "price": 119.99,
@@ -188,7 +188,7 @@
     {
       "id": 4,
       "name": "Хлебцы с баварскими колбасками",
-      "imgLogo": "img/sides/xlebBavar.jpg",
+      "imgLogo": "img/side/xlebBavar.jpg",
       "categoryId": 2,
       "recommended": false,
       "price": 119.99,
@@ -198,7 +198,7 @@
     {
       "id": 5,
       "name": "Салат с шпинатом",
-      "imgLogo": "img/sides/salat.jpg",
+      "imgLogo": "img/side/salat.jpg",
       "categoryId": 3,
       "recommended": false,
       "price": 84.99,
@@ -208,7 +208,7 @@
     {
       "id": 6,
       "name": "Салат с курицей",
-      "imgLogo": "img/sides/salatChicken.jpg",
+      "imgLogo": "img/side/salatChicken.jpg",
       "categoryId": 3,
       "recommended": false,
       "price": 84.99,
