@@ -94,7 +94,7 @@
     {
       "id": 1,
       "name": "BonAqua г",
-      "imgLogo": "img/pizza/gaz-thumbnail-960x960.png",
+      "imgLogo": "img/drinks/gaz-thumbnail-960x960.png",
       "categoryId": 1,
       "recommended": false,
       "prices": [24,32,38],
@@ -105,7 +105,7 @@
     {
       "id": 2,
       "name": "BonAqua н/г",
-      "imgLogo": "img/pizza/NG-thumbnail-960x960.png",
+      "imgLogo": "img/drinks/NG-thumbnail-960x960.png",
       "categoryId": 1,
       "recommended": false,
       "prices": [24,32,38],
@@ -115,7 +115,7 @@
     {
       "id": 3,
       "name": "Coca-Cola",
-      "imgLogo": "img/pizza/cc-thumbnail-960x960.png",
+      "imgLogo": "img/drinks/cc-thumbnail-960x960.png",
       "categoryId": 1,
       "recommended": true,
       "prices": [24,32,38],
@@ -125,7 +125,7 @@
     {
       "id": 4,
       "name": "Fanta",
-      "imgLogo": "img/pizza/fan-thumbnail-960x960.png",
+      "imgLogo": "img/drinks/fan-thumbnail-960x960.png",
       "categoryId": 1,
       "recommended": false,
       "prices": [24,32,38],
@@ -135,7 +135,7 @@
     {
       "id": 6,
       "name": "Rich Яблоко",
-      "imgLogo": "img/pizza/apple-thumbnail-960x960.png",
+      "imgLogo": "img/drinks/apple-thumbnail-960x960.png",
       "categoryId": 2,
       "recommended": false,
       "prices": [28,32,46],
@@ -145,7 +145,7 @@
     {
       "id": 7,
       "name": "Rich Апельсин",
-      "imgLogo": "img/pizza/orange-thumbnail-960x960.png",
+      "imgLogo": "img/drinks/orange-thumbnail-960x960.png",
       "categoryId": 2,
       "recommended": false,
       "prices": [28,32,46],
@@ -157,7 +157,7 @@
     {
       "id": 1,
       "name": "Куриные стрипсы",
-      "imgLogo": "img/pizza/streeps.jps",
+      "imgLogo": "img/sides/streeps.jps",
       "categoryId": 1,
       "recommended": false,
       "price": 119.99,
@@ -167,7 +167,7 @@
     {
       "id": 2,
       "name": "Куриные крылишки",
-      "imgLogo": "img/pizza/krill.jpg",
+      "imgLogo": "img/sides/krill.jpg",
       "categoryId": 1,
       "recommended": false,
       "price": 119.99,
@@ -177,7 +177,7 @@
     {
       "id": 3,
       "name": "Хлебцы с паперони",
-      "imgLogo": "img/pizza/xleb.jpg",
+      "imgLogo": "img/sides/xleb.jpg",
       "categoryId": 2,
       "recommended": false,
       "price": 119.99,
@@ -188,7 +188,7 @@
     {
       "id": 4,
       "name": "Хлебцы с баварскими колбасками",
-      "imgLogo": "img/pizza/xlebBavar.jpg",
+      "imgLogo": "img/sides/xlebBavar.jpg",
       "categoryId": 2,
       "recommended": false,
       "price": 119.99,
@@ -198,7 +198,7 @@
     {
       "id": 5,
       "name": "Салат с шпинатом",
-      "imgLogo": "img/pizza/salat.jpg",
+      "imgLogo": "img/sides/salat.jpg",
       "categoryId": 3,
       "recommended": false,
       "price": 84.99,
@@ -208,7 +208,7 @@
     {
       "id": 6,
       "name": "Салат с курицей",
-      "imgLogo": "img/pizza/salatChicken.jpg",
+      "imgLogo": "img/sides/salatChicken.jpg",
       "categoryId": 3,
       "recommended": false,
       "price": 84.99,
@@ -220,7 +220,7 @@
   "deserts": [{
     "id": 1,
     "name": "Шоколадный маффин",
-    "imgLogo": "img/pizza/maffin.jpg",
+    "imgLogo": "img/deserts/maffin.jpg",
     "recommended": false,
     "price": 32.99,
     "currency": "грн",
@@ -228,7 +228,7 @@
   },{
     "id": 2,
     "name": "Лава кейк",
-    "imgLogo": "img/pizza/lavaCake.jpg",
+    "imgLogo": "img/deserts/lavaCake.jpg",
     "recommended": false,
     "price": 59.99,
     "currency": "грн",
@@ -240,7 +240,7 @@
     "id": 1,
     "name": "Сумасшедший вторник",
     "date": "25-03-2020",
-    "imgLogo": "img/pizza/blackFriday.jpg",
+    "imgLogo": "img/blackFriday.jpg",
     "recommended": true,
     "description": "Каждый вторник Domino's проводит невероятную акцию «Сумасшедший вторник» - покупай одну среднюю или большую пиццу и получай вторую со скидкой 80%! В акции не участвуют маленькие пиццы. Согласно условиям акции, пицца со скидкой должна быть из меню без добавления ингредиентов. Акция действует на доставку, и для заказов, которые можно будет получить возле точки адресной доставки (у входа в пиццерию). Скидка предоставляется на меньший товар в чеке. Акция не суммируется с другими акционными предложениями. Категория пицц \"Лучшая цена\" является акционным предложением, которое не работает во вторник. Во вторник пиццы категории \"Лучшая цена\" переходят в категорию пицц \"Классические\". С акцией вторника бонусы не списываются, только начисляются."
   },
@@ -248,7 +248,7 @@
       "id": 2,
       "name": "Black Friday -50% на пиццу!",
       "date": "25-11-2020",
-      "imgLogo": "img/pizza/vtornik.jpg",
+      "imgLogo": "img/vtornik.jpg",
       "recommended": true,
       "description": "Черная пятница в Domino`s! А, следовательно, все пушистые лапки получат выгодную скидку на свою любимую пиццу! С 27.11. по 29.11. покупай каждую вторую пиццу со скидкой -50%! Акция распространяется на средние и большие пиццы. В акции не участвуют маленькие пиццы. Акция действует при заказе в пиццериях, на вынос или доставку. Скидка предоставляется на более дешевый товар в чеке. Акция не суммируется с другими акционными предложениями. Бортики «Филадельфия» и «Хот-дог» к акционным пиццам добавляются. Акция действует на пиццы по собственному рецепту. Акция действует на пиццы, которые состоят из двух разных половинок пицц. Условия программы лояльности Domino`s Club распространяются на акционное предложение."
 
