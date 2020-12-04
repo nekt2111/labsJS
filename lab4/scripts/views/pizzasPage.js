@@ -1,22 +1,23 @@
 
+
 const view = (products) =>
     ` 
            <div class="main__wrapper">
                     <div class="best__title title"><h2>Пицца: Лучшая Цена</h2></div>
                     <div class="best__row elements__row">
-                        ${products.filter((product) => product.categoryId === 1).map((rowProduct) => `<div class="best__element element">
+                        ${products.filter((product) => product.categoryId === 1).map((rowProduct) => `<div class="best__element element" id=${rowProduct.id}>
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
+                                <div class="size__small size picked-size">Маленькая</div>
+                                <div class="size__medium size">Средняя</div>
+                                <div class="size__big size" >Большая</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.price[0]}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
@@ -25,19 +26,19 @@ const view = (products) =>
                     </div>
                     <div class="classic__title title"><h2>Пицца: Классические </h2></div>
                     <div class="classic__row elements__row">
-                    ${products.filter((product) => product.categoryId === 2).map((rowProduct) => `<div class="best__element element">
+                    ${products.filter((product) => product.categoryId === 2).map((rowProduct) => `<div class="best__element element" id=${rowProduct.id}>
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
+                                <div class="size__small size picked-size")">Маленькая</div>
+                                <div class="size__medium size" )" >Средняя</div>
+                                <div class="size__big size">Большая</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.price[0]}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
@@ -48,19 +49,19 @@ const view = (products) =>
                     <div class="firm__title title"><h2>Пицца: Фирменные </h2></div>
                     <div class="firm__row elements__row">
                           ${products.filter(product => product.categoryId === 3).map(rowProduct => `
-                        <div class="best__element element">
+                        <div class="best__element element" id=${rowProduct.id}>
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
                             <div class="element__size">
-                                <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">Маленькая</div>
-                                <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >Средняя</div>
-                                <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
+                                <div class="size__small size picked-size")">Маленькая</div>
+                                <div class="size__medium size" )" >Средняя</div>
+                                <div class="size__big size">Большая</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.price[0]}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>

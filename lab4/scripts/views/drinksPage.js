@@ -10,12 +10,12 @@ const view = (drinks) => `
                             <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${drink.id}"><h3>${drink.name}</h3></div>
                         </div>
                         <div class="element__size">
-                            <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">330мл</div>
-                            <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >500мл</div>
-                            <div class="size__big size" onclick="pickSize(\`size__big\`)">1л</div>
+                            <div class="size__small size picked-size">330мл</div>
+                            <div class="size__medium size"  >500мл</div>
+                            <div class="size__big size">1л</div>
                         </div>
                         <div class="element__buy">
-                            <div class="element__price"><span class="price__number">${drink.price}</span><span
+                            <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
                                     class="price__currency">${drink.currency}</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>
@@ -30,12 +30,12 @@ const view = (drinks) => `
                             <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${drink.id}"><h3>${drink.name}</h3></div>
                         </div>
                         <div class="element__size">
-                            <div class="size__small size picked-size" onclick="pickSize(\`size__small\`)">330мл</div>
-                            <div class="size__medium size" onclick="pickSize(\`size__medium\`)" >500мл</div>
-                            <div class="size__big size" onclick="pickSize(\`size__big\`)">1л</div>
+                            <div class="size__small size picked-size">330мл</div>
+                            <div class="size__medium size"  >500мл</div>
+                            <div class="size__big size">1л</div>
                         </div>
                         <div class="element__buy">
-                            <div class="element__price"><span class="price__number">${drink.price}</span><span
+                            <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
                                     class="price__currency">${drink.currency}</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>

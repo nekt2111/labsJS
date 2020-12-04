@@ -29,6 +29,9 @@ async function load(){
     document.querySelector('.header__cart').addEventListener('click',() => {
         window.location.hash = "#cart";
     })
+    document.querySelectorAll(".size__small").forEach(element => element.addEventListener("click",changeToSmallSize))
+    document.querySelectorAll(".size__medium").forEach(element => element.addEventListener("click",changeToMediumSize))
+    document.querySelectorAll(".size__big").forEach(element => element.addEventListener("click",changeToBigSize))
 }
 
 
@@ -39,6 +42,7 @@ async function change(fileName,catalogName,id) {
         console.log(fileName)
         console.log(catalogName)
         console.log(id)
+
         return client.getDataCatalog(catalogName);
     })
         .then((data) => {
@@ -52,7 +56,37 @@ async function change(fileName,catalogName,id) {
 }
 
 
-function changeSize(id,data){
+async function changeToSmallSize(){
+    await changeSize(0,this.parentElement.parentElement.id)
+
+}
+
+async function changeToMediumSize(){
+    await changeSize(1,this.parentElement.parentElement.id)
+}
+
+async function changeToBigSize(){
+    await changeSize(2,this.parentElement.parentElement.id)
+}
+
+
+
+async function changeSize(pickedSize,id){
+        const catalog = location.hash.split("#")[1]
+
+        const sizes = document.getElementById(id).querySelectorAll(".size")
+
+        sizes.forEach(element =>element.classList.remove("picked-size"))
+
+        for (let i = 0; i < sizes.length ; i++) {
+                if(i === pickedSize){
+                    sizes[i].classList.add("picked-size")
+                }
+        }
+
+    const productData = await client.getObjectInCatalog(catalog,parseInt(id));
+    document.getElementById(id).querySelector(".price__number").textContent = productData.prices[pickedSize]
+
 
 }
 
