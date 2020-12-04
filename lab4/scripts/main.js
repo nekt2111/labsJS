@@ -6,6 +6,8 @@ import Client from "./client.js";
 const router = new Router()
 const templateProcessor = new TemplateProcessor()
 const client = new Client()
+let map = new Map()
+map.get("deserts")
 
 const headerLinks = ['#sales','#pizzas','#drinks','#sides','#deserts']
 
@@ -32,6 +34,9 @@ async function load(){
     document.querySelectorAll(".size__small").forEach(element => element.addEventListener("click",changeToSmallSize))
     document.querySelectorAll(".size__medium").forEach(element => element.addEventListener("click",changeToMediumSize))
     document.querySelectorAll(".size__big").forEach(element => element.addEventListener("click",changeToBigSize))
+
+    window.scroll(0,0);
+
 }
 
 

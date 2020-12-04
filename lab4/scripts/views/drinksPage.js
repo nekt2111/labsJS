@@ -4,7 +4,7 @@ const view = (drinks) => `
                 <div class="water__row elements__row">
                     
                         ${drinks.filter((drink) => drink.categoryId === 1).map(drink => `
-                        <div class="water__element element element-drink">
+                        <div class="water__element element element-drink" id=${drink.id}>
                         <div class="element__logo element__drink-logo"><img src=${drink.imgLogo} alt="water"></div>
                         <div class="element__description element__center-description ">
                             <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${drink.id}"><h3>${drink.name}</h3></div>
@@ -24,7 +24,7 @@ const view = (drinks) => `
                     <div class="water__title title"><h2>Сок</h2></div>
                     <div class="water__row elements__row">
                        ${drinks.filter((drink) => drink.categoryId === 2).map(drink => `
-                        <div class="water__element element element-drink">
+                        <div class="water__element element element-drink" id=${drink.id}>
                         <div class="element__logo element__drink-logo"><img src=${drink.imgLogo} alt="water"></div>
                         <div class="element__description element__center-description ">
                             <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${drink.id}"><h3>${drink.name}</h3></div>

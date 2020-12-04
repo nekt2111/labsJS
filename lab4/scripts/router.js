@@ -16,7 +16,7 @@ class Router{
             switch (location) {
                 case "":
                     fileName = "index"
-                    catalogName = ""
+                    catalogName = "db"
                     break;
                 case "drinks":
                     fileName = "drinks"
@@ -58,7 +58,7 @@ class Router{
             console.log(exists)
             if(!exists){
                 fileName = "index";
-                catalogName = "";
+                catalogName = "db";
             }
             else{
 
