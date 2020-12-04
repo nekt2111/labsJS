@@ -77,9 +77,18 @@ async function changeToBigSize(){
 
 
 async function changeSize(pickedSize,id){
-        const catalog = location.hash.split("#")[1]
+        let catalog;
+        let newId;
+        if(catalog === undefined){
+            newId = id.split(".")[1]
+            catalog = id.split(".")[0]
+        }
+        else{
+            catalog = location.hash.split("#")[1]
+            newId = id;
+        }
 
-        const sizes = document.getElementById(id).querySelectorAll(".size")
+        const sizes = document.getElementById(newId).querySelectorAll(".size")
 
         sizes.forEach(element =>element.classList.remove("picked-size"))
 
@@ -89,7 +98,7 @@ async function changeSize(pickedSize,id){
                 }
         }
 
-    const productData = await client.getObjectInCatalog(catalog,parseInt(id));
+    const productData = await client.getObjectInCatalog(catalog,parseInt(newId));
     document.getElementById(id).querySelector(".price__number").textContent = productData.prices[pickedSize]
 
 
