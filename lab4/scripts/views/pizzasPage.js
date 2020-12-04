@@ -16,7 +16,7 @@ const view = (products) =>
                                 <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.price[0]}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
@@ -37,7 +37,7 @@ const view = (products) =>
                                 <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.price[0]}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
@@ -60,7 +60,7 @@ const view = (products) =>
                                 <div class="size__big size" onclick="pickSize(\`size__big\`)">Большая</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.price[0]}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>

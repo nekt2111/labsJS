@@ -50,5 +50,12 @@ async function change(fileName,catalogName,id) {
             }
         })
 }
+
+
+function changeSize(id,data){
+
+}
+
+
 load()
 window.onhashchange = load

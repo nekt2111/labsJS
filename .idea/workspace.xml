@@ -3,20 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/cartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/cartPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/desertsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/desertsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/drinksPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/drinksPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/indexPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/indexPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab4/scripts/views/pizzasPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/pizzasPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/salePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/salePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/salesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/salesPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/sidesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/scripts/views/sidesPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +104,8 @@
       <workItem from="1607018676607" duration="8536000" />
       <workItem from="1607027264159" duration="5375000" />
       <workItem from="1607032688494" duration="5452000" />
-      <workItem from="1607038178348" duration="2757000" />
+      <workItem from="1607038178348" duration="2855000" />
+      <workItem from="1607077820502" duration="975000" />
     </task>
     <servers />
   </component>
