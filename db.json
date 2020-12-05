@@ -139,16 +139,6 @@
       "price":32,
       "relatedProductsIds":[1, 3, 4],
       "description":"Яблочный Сок Rich 1л"
-    },
-    {
-      "id":7,
-      "name":"Rich Апельсин",
-      "imgLogo":"img/drinks/orange-thumbnail-960x960.png",
-      "categoryId":2,
-      "recommended":false,
-      "price":32,
-      "relatedProductsIds":[3, 4, 6],
-      "description":"Апельсиновый  Сок Rich 1л"
     }
   ],
   "sides":[
@@ -201,16 +191,6 @@
       "price":84.99,
       "relatedProductsIds":[3, 4, 6],
       "description":"Салат со шпинатом 200г"
-    },
-    {
-      "id":6,
-      "name":"Салат с курицей",
-      "imgLogo":"img/side/salatChicken.jpg",
-      "categoryId":3,
-      "recommended":false,
-      "price":84.99,
-      "relatedProductsIds":[3, 5, 1],
-      "description":"Салат со курицей 200г"
     }
   ],
   "deserts":[
