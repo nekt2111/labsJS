@@ -1,4 +1,3 @@
-localStorage.clear()
 
 
 import TemplateProcessor from "./templateProccesor.js";
