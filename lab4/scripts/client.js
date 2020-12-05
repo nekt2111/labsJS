@@ -29,7 +29,7 @@ class Client {
     }
     async setData(order){
 
-        return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/orders`,{
+        return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/pizzas`,{
             method: 'POST',
             body: JSON.stringify(order)
         }).then(response => {return response.json()})
