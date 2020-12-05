@@ -16,6 +16,7 @@
     align-self: center;
     font-size: 30px;
     color: rgba(0,0,0,0.5);
+    margin-bottom: 30px;
 }
 
 .status__element{
@@ -43,9 +44,10 @@
 
 .status__element-info-icon{
     margin-top: 50px;
+    width: 76%;
     position: relative;
     padding: 0 0 60% 0;
-    margin-left: 33%;
+    margin-left: 29%;
 }
 
 .status__element-info-text{

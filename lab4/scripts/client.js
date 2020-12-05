@@ -32,7 +32,13 @@ class Client {
         return await fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/pizzas`,{
             method: 'POST',
             body: JSON.stringify(order)
-        }).then(response => {return response.json()})
+        }).then(response => {
+            if(response.ok){
+                return response.json()}
+            else{
+                window.location.hash = "error"
+            }
+        })
         }
 
     }

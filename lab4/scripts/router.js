@@ -48,6 +48,10 @@ class Router{
                     fileName = "deserts"
                     catalogName = "deserts"
                     break;
+                case "error":
+                    fileName = "error"
+                    catalogName = "db"
+                    break;
                 default:
                     fileName = "index"
                     catalogName = "db"

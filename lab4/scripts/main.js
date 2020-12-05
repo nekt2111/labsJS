@@ -62,7 +62,13 @@ async function load(){
     if(fileName === "cart"){
         console.log((await getSum()).toPrecision())
         const price = (await getSum()).toPrecision().split(".")
-        const allPrice = price[0] + "." + price[1].substr(0,2) + " грн"
+        let allPrice;
+        if(price[1] === undefined) {
+            allPrice = price[0]  + " грн"
+        }
+        else {
+            allPrice = price[0] + "." + price[1].substr(0, 2) + " грн"
+        }
         document.querySelector(".order__all-price").textContent = allPrice
         document.getElementById("price-par").textContent = allPrice
     }
@@ -133,7 +139,6 @@ async function addAllEventListeners(catalog,fileName){
                 payment: document.getElementById("payment").value,
             }
 
-            console.log(order)
 
             changeStatus(false)
             let id = Object.values(await client.setData(order))[0]

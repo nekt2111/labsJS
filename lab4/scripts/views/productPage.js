@@ -17,7 +17,7 @@ const view = (products,productId) => ` <div class="spinner__wrapper" style="disp
                         <div class="product__ingridients"><p>${products[productId].description}</p><p>${products[productId].size === undefined ? " " : products[productId].size}</p></div>
                         
                       
-                        <div class="product__buy">
+                        <div class="product__buy" id=${productId + 1}>
                             <div class="product__main-price"><span class="product-price__number">${products[productId].price}</span><span
                                     class="price__currency">грн</span></div>
                             <div class="product__add-cart_btn"><button class="element__cart">Добавить в корзину</button></div>
