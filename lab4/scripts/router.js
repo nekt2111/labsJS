@@ -1,4 +1,5 @@
 import Client from "./client.js";
+import {getStatusShown,changeStatus} from "./main.js";
 
 let client = new Client();
 
@@ -35,12 +36,8 @@ class Router{
                     catalogName = "sides"
                     break;
                 case "cart":
-                    fileName = "cart"
-                    catalogName = "db"
-                    break;
-                case "status":
-                    fileName = "status"
-                    catalogName = ""
+                        fileName = "cart"
+                        catalogName = "db"
                     break;
                 case "deserts":
                     fileName = "deserts"
@@ -48,44 +45,59 @@ class Router{
                     break;
                 default:
                     fileName = "index"
-                    catalogName = ""
+                    catalogName = "db"
                     break;
             }
         }
         else{
             const tempId = location.split('/')[1];
-            const exists = await client.idExists(location.split('/')[0],parseInt(tempId));
-            console.log(exists)
-            if(!exists){
-                fileName = "index";
-                catalogName = "db";
+            if(location.split("/")[0] !== "status") {
+                const exists = await client.idExists(location.split('/')[0], parseInt(tempId));
+                console.log(exists)
+                if (!exists) {
+                    fileName = "index";
+                    catalogName = "db";
+                } else {
+                    id = tempId;
+                    switch (location.split('/')[0]) {
+                        case "drinks":
+                            fileName = "product"
+                            catalogName = "drinks"
+                            break;
+                        case "pizzas":
+                            fileName = "product"
+                            catalogName = "pizzas"
+                            break;
+                        case "sales":
+                            fileName = "sale"
+                            catalogName = "sales"
+                            break;
+                        case "sides":
+                            fileName = "product"
+                            catalogName = "sides"
+                            break;
+                        case "deserts":
+                            fileName = "product"
+                            catalogName = "deserts"
+                            break;
+
+
+                    }
+                }
+
             }
             else{
-
-                id = tempId;
-
-                switch (location.split('/')[0]) {
-                    case "drinks":
-                        fileName = "product"
-                        catalogName = "drinks"
-                        break;
-                    case "pizzas":
-                        fileName = "product"
-                        catalogName = "pizzas"
-                        break;
-                    case "sales":
-                        fileName = "sale"
-                        catalogName = "sales"
-                        break;
-                    case "sides":
-                        fileName = "product"
-                        catalogName = "sides"
-                        break;
-                    case "deserts":
-                        fileName = "product"
-                        catalogName = "deserts"
-                        break;
+                if(getStatusShown()){
+                    fileName = "index"
+                    catalogName = "db"
+                    console.log(getStatusShown())
                 }
+                else{
+                    fileName = "status";
+                    catalogName = "db"
+                    changeStatus(true)
+                }
+
             }
         }
         return {

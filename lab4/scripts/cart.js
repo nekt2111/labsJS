@@ -1,14 +1,17 @@
 
-let cart;
 
-if(localStorage.getItem("cart") === null) {
-    cart = {
-        ids: [],
-        amount: []
+function getCart() {
+    let cart;
+    if (localStorage.getItem("cart") === null) {
+        cart = {
+            ids: [],
+            amount: []
+        }
+    } else {
+        cart = JSON.parse(localStorage.getItem("cart"))
     }
-}
-    else{
-    cart = JSON.parse(localStorage.getItem("cart"))
+
+    return cart;
 }
 class Cart {
 
@@ -25,6 +28,7 @@ class Cart {
 }
 
     addOneProductToCart(id){
+        let cart = getCart()
         if(!cart.ids.includes(id)){
             cart.ids.push(id)
             cart.amount.push(1)
@@ -35,6 +39,7 @@ class Cart {
         localStorage.setItem("cart",JSON.stringify(cart))
     }
     removeOneProductFromCart(id){
+        let cart = getCart()
         if(cart.amount[cart.ids.indexOf(id)] === 1){
                 cart.amount.splice(cart.ids.indexOf(id),1)
         }

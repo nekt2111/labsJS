@@ -1,14 +1,14 @@
 
 class Client {
     async getDataCatalog(catalog) {
-        if(catalog !== undefined && catalog.length !== 0) {
-            console.log(catalog)
+        if(catalog !== undefined && catalog.length !== 0 && catalog !== "status") {
             return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/${catalog}`).then((response) => {
                 return response.json();
             });
         }
     }
     async idExists(catalog,id){
+
        return await this.getDataCatalog(catalog).then((data) => {
             for (let i = 0; i <data.length ; i++) {
                 if(data[i].id === parseInt(id)){
@@ -29,7 +29,7 @@ class Client {
     }
     async setData(order){
 
-        return fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/pizzas`,{
+        return await fetch(`https://my-json-server.typicode.com/nekt2111/labsJS/pizzas`,{
             method: 'POST',
             body: JSON.stringify(order)
         }).then(response => {return response.json()})

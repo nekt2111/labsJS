@@ -17,7 +17,7 @@ const view = (drinks) => `
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                         <div class="element__buy">
-                            <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
+                            <div class="element__price"><span class="price__number">${drink.price}</span><span
                                     class="price__currency">${drink.currency}</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>
@@ -35,7 +35,7 @@ const view = (drinks) => `
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                         <div class="element__buy">
-                            <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
+                            <div class="element__price"><span class="price__number">${drink.price}</span><span
                                     class="price__currency">${drink.currency}</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>

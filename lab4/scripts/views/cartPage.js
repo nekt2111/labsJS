@@ -42,10 +42,11 @@ const view = (products) =>`
                             <input type="text" class="blank__payment blank__input" id="payment">
                         </div>
                         <div class="blank__price"><p id="word-par">Всего</p><p id="price-par">92.99 грн</p></div>
-                        <div class="blank__reg-button"><a href="status.html"><button class="order_btn">Заказать</button></a></div>
+                        <div class="blank__reg-button"><a href="status.html"><button type="submit" class="order_btn">Заказать</button></a></div>
 
                     </form>
                 </div>
+                    
                 <div class="order-display">
                     <div class="order-display__title cart-title"><h2>Ваш заказ</h2></div>
                     <div class="order-display__orders">

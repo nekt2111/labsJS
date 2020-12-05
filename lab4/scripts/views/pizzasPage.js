@@ -18,7 +18,7 @@ const view = (products) =>
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
@@ -37,7 +37,7 @@ const view = (products) =>
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
@@ -58,7 +58,7 @@ const view = (products) =>
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
+                                <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
                                         class="price__currency">${rowProduct.currency}</span></div>
                                 <div class="element__cart">
                                 В корзину</div>

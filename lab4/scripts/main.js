@@ -8,7 +8,16 @@ const router = new Router()
 const templateProcessor = new TemplateProcessor()
 const client = new Client()
 const cart = new Cart();
+let statusShow = true;
 
+export function getStatusShown(){
+    return statusShow;
+}
+
+export function changeStatus(status){
+    statusShow = status
+
+}
 
 
 function showSpinner() {
@@ -46,8 +55,9 @@ export async function getSum(){
 
 async function load(){
     let {fileName,catalogName,id} = await router.getCurrentState()
+    console.log(fileName)
     await change(fileName,catalogName,id)
-    addAllEventListeners(catalogName)
+    await addAllEventListeners(catalogName,fileName)
     if(fileName === "cart"){
         console.log((await getSum()).toPrecision())
         const price = (await getSum()).toPrecision().split(".")
@@ -64,7 +74,7 @@ async function load(){
 
 }
 
-function addAllEventListeners(catalog){
+async function addAllEventListeners(catalog,fileName){
     document.querySelector('.logo img').addEventListener('click',() => {
         window.location.hash = "";
     })
@@ -73,11 +83,21 @@ function addAllEventListeners(catalog){
     })
     for (let i = 0; i < headerLinks.length; i++) {
         document.querySelectorAll('.nav__link')[i].addEventListener('click',() => {
+
+
             window.location.hash = headerLinks[i]
         })
     }
+
+
+
     document.querySelector('.header__cart').addEventListener('click',() => {
-        window.location.hash = "#cart";
+        if(localStorage.getItem("cart") !== null) {
+            window.location.hash = "#cart";
+        }
+        else{
+            window.location.hash = ""
+        }
     })
     document.querySelectorAll(".size__small").forEach(element => element.addEventListener("click",changeToSmallSize))
     document.querySelectorAll(".size__medium").forEach(element => element.addEventListener("click",changeToMediumSize))
@@ -94,17 +114,20 @@ function addAllEventListeners(catalog){
             cart.addOneProductToCart(catalog + "." + element.parentElement.parentElement.id)
             document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
         }))
+    }
+    if(fileName === "cart"){
+        document.querySelector(".order__registration-blank").addEventListener("submit",async (event) =>{
+            event.preventDefault()
+            changeStatus(false)
+            let id = Object.values(await client.setData({a:1,b:2}))[0]
+            localStorage.clear()
+            window.location.hash = "status/" + id
 
+
+        })
     }
 
-    let a = {
-        a:1,
-        b:2
-    }
 
-    document.querySelector(".order_btn").addEventListener("click",() => {
-        client.setData(a)
-    })
 
 }
 
@@ -176,5 +199,5 @@ async function changeSize(pickedSize,id){
 }
 
 
-load()
 window.onhashchange = load
+load()
