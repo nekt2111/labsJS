@@ -27,6 +27,13 @@ class Client {
            }
         })
     }
+    async setData(order){
+
+
+
+
+
+    }
 
 }
 

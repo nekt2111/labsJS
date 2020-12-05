@@ -1,5 +1,10 @@
 
-const view = (sale,id) => `<div class="main__wrapper">
+const view = (sale,id) => ` <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
+<div class="main__wrapper">
+                
+
         <div class="sale-mains__element">
         <div class="sale-main__logo"><img src=${sale[id].imgLogo} alt=""></div>
         <div class="sale-main__description">

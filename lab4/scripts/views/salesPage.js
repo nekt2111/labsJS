@@ -1,4 +1,9 @@
-const view = (sales) => `<div class="main__wrapper">
+const view = (sales) => ` <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
+<div class="main__wrapper">
+                
+
         <div class="sales__list">
             ${sales.map(sale => `
             <div class="sales-main__element">

@@ -36,7 +36,7 @@ class Router{
                     break;
                 case "cart":
                     fileName = "cart"
-                    catalogName = ""
+                    catalogName = "db"
                     break;
                 case "status":
                     fileName = "status"

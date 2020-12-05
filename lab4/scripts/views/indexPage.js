@@ -1,5 +1,8 @@
 
-const view = (object) => `
+const view = (object) => ` <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
+   
     <div class="main__wrapper">
                     <div class="sales__title title"><h2>Акции</h2></div>
                     <div class="sales__row elements__row">
@@ -11,7 +14,7 @@ const view = (object) => `
                                 <div class="sale__information">${sale.description}</div>
                             </div>
                             <div class="sale__details">
-                                <div class="sale__details-btn">Детали</div>
+                                <div class="sale__details-btn" onclick="window.location.hash += 'sales/'+${sale.id}"><h3>Детали</div>
                             </div>
                         </div>
                         `).join("")}
@@ -26,10 +29,8 @@ const view = (object) => `
                                 <div class="element__title link" onclick="window.location.hash += 'pizzas/'+${product.id}"><h3>${product.name}</h3></div>
                                 <div class="element__information">${product.ingredients}</div>
                             </div>
-                            <div class="element__size">
-                                <div class="size__small size picked-size">Маленькая</div>
-                                <div class="size__medium size">Средняя</div>
-                                <div class="size__big size">Большая</div>
+                             <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${product.prices[0]}</span><span
@@ -45,11 +46,9 @@ const view = (object) => `
                         <div class="element__description element__center-description ">
                             <div class="element__title element__drink-title link" onclick="window.location.hash +=  'drinks/'+${drink.id}"><h3>${drink.name}</h3></div>
                         </div>
-                        <div class="element__size">
-                            <div class="size__small size picked-size">330мл</div>
-                            <div class="size__medium size"  >500мл</div>
-                            <div class="size__big size">1л</div>
-                        </div>
+                         <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
+                            </div>
                         <div class="element__buy">
                             <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
                                     class="price__currency">${drink.currency}</span></div>
@@ -64,9 +63,9 @@ const view = (object) => `
                           <div class="element__description element__center-description">
                              <div class="element__title element__drink-title link" onclick="window.location.hash += 'sides/'+${side.id}"><h3>${side.name}</h3></div>
                                      </div>
-                             <div class="element__size element__side-size">
-                                <div class="size__small size picked-size">Стандарт</div>
-                                 </div>
+                              <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
+                            </div>і
                                 <div class="element__buy">
                                  <div class="element__price"><span class="price__number">${side.price}</span><span
                             class="price__currency">${side.currency}</span></div>

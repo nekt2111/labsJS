@@ -1,9 +1,13 @@
 
-const view = (sides) => `<div class="main__wrapper">
+const view = (sides) => ` <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
+<div class="main__wrapper">
+                
         <div class="best__title title"><h2>Курица</h2></div>
         <div class="best__row elements__row ">
             ${sides.filter(side => side.categoryId === 1).map(side => `
-            <div class="best__element element element-drink">
+            <div class="best__element element element-drink" id=${side.id}>
                 <div class="element__logo"><img src=${side.imgLogo} alt="Streeps"></div>
                 <div class="element__description element__center-description">
                     <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${side.id}"><h3>${side.name}</h3></div>

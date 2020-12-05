@@ -1,5 +1,9 @@
 const view = (drinks) => `
+                  <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
              <div class="main__wrapper">
+                           
                 <div class="water__title title"><h2>Вода</h2></div>
                 <div class="water__row elements__row">
                     
@@ -9,11 +13,9 @@ const view = (drinks) => `
                         <div class="element__description element__center-description ">
                             <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${drink.id}"><h3>${drink.name}</h3></div>
                         </div>
-                        <div class="element__size">
-                            <div class="size__small size picked-size">330мл</div>
-                            <div class="size__medium size"  >500мл</div>
-                            <div class="size__big size">1л</div>
-                        </div>
+                        <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
+                            </div>
                         <div class="element__buy">
                             <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
                                     class="price__currency">${drink.currency}</span></div>
@@ -29,11 +31,9 @@ const view = (drinks) => `
                         <div class="element__description element__center-description ">
                             <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${drink.id}"><h3>${drink.name}</h3></div>
                         </div>
-                        <div class="element__size">
-                            <div class="size__small size picked-size">330мл</div>
-                            <div class="size__medium size"  >500мл</div>
-                            <div class="size__big size">1л</div>
-                        </div>
+                         <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
+                            </div>
                         <div class="element__buy">
                             <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
                                     class="price__currency">${drink.currency}</span></div>

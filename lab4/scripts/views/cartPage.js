@@ -1,5 +1,13 @@
+import {getSum} from "../main.js";
 
-const view = () =>`<div class="main__wrapper cart-main__wrapper">
+
+const view = (products) =>`
+      
+      <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
+<div class="main__wrapper cart-main__wrapper">
+                               
                 <div class="order-registration">
                     <div class="order-registration__title cart-title"><h2>Оформление заказа</h2></div>
                     <form class="order__registration-blank">
@@ -42,29 +50,100 @@ const view = () =>`<div class="main__wrapper cart-main__wrapper">
                     <div class="order-display__title cart-title"><h2>Ваш заказ</h2></div>
                     <div class="order-display__orders">
                         <div class="order-display__order">
+                        ${(Object.entries(products).filter(([key]) => key !== "sales" )[0][1].
+                                    filter(element => JSON.parse(localStorage.getItem("cart")).ids.
+                            includes("pizzas." + element.id)).map(pizza => `
                             <div class="order__main-info">
-                            <div class="order__logo"><img src="img/pizza/Margarita.jpg" alt=""></div>
+                            <div class="order__logo"><img src=${pizza.imgLogo} alt=""></div>
                             <div class="order__description">
                                 <div class="order__information">
                                 <div class="order__name">
-                                    <h3>Пицца Маргарита</h3>
+                                    <h3>${pizza.name}</h3>
                                 </div>
-                                <div class="order__ingrid">Ветчина, Соус , Бекон, Сыр</div>
+                                <div class="order__ingrid">${pizza.ingredients}</div>
                                 <div class="order__size">
-                                    Маленькая
+                                    Стандарт
                                 </div>
                                 </div>
                                 <div class="order__buy">
-                                    <div class="order__price">92.99 грн</div>
-                                    <div class="order__amount">1</div>
+                                    <div class="order__price">${pizza.prices[0] +" " + pizza.currency}</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("pizzas." + pizza.id )]}</div>
                                 </div>
                             </div>
                             </div>
+                            `).join(""))}
+                        
+                         ${(Object.entries(products).filter(([key]) => key !== "sales" )[1][1].
+                            filter(element => JSON.parse(localStorage.getItem("cart")).ids.
+                                includes("drinks." + element.id)).map(drink => `
+                            <div class="order__main-info">
+                            <div class="order__logo"><img src=${drink.imgLogo} alt=""></div>
+                            <div class="order__description">
+                                <div class="order__information">
+                                <div class="order__name">
+                                    <h3>${drink.name}</h3>
+                                </div>
+                                <div class="order__ingrid">${drink.ingerdients}</div>
+                                <div class="order__size">
+                                    Стандарт
+                                </div>
+                                </div>
+                                <div class="order__buy">
+                                    <div class="order__price">${drink.prices[0] +" " + drink.currency}</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("drinks." + drink.id )]}</div>
+                                </div>
+                            </div>
+                            </div>
+                            `).join(""))}
+                         
+                          ${(Object.entries(products).filter(([key]) => key !== "sales" )[2][1].
+                            filter(element => JSON.parse(localStorage.getItem("cart")).ids.
+                            includes("sides." + element.id)).map(side => `
+                            <div class="order__main-info">
+                            <div class="order__logo"><img src=${side.imgLogo} alt=""></div>
+                            <div class="order__description">
+                                <div class="order__information">
+                                <div class="order__name">
+                                    <h3>${side.name}</h3>
+                                </div>
+                                <div class="order__ingrid">${side.ingerdients}</div>
+                                <div class="order__size">
+                                    Стандарт
+                                </div>
+                                </div>
+                                <div class="order__buy">
+                                    <div class="order__price">${side.price +" " + side.currency}</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("sides." + side.id )]}</div>
+                                </div>
+                            </div>
+                            </div>
+                            `).join(""))}
+                          
+                          ${(Object.entries(products).filter(([key]) => key !== "sales" )[3][1].
+                            filter(element => JSON.parse(localStorage.getItem("cart")).ids.
+                            includes("deserts." + element.id)).map(desert => `
+                            <div class="order__main-info">
+                            <div class="order__logo"><img src=${desert.imgLogo} alt=""></div>
+                            <div class="order__description">
+                                <div class="order__information">
+                                <div class="order__name">
+                                    <h3>${desert.name}</h3>
+                                </div>
+                                <div class="order__ingrid">${desert.ingerdients}</div>
+                                <div class="order__size">
+                                    Стандарт
+                                </div>
+                                </div>
+                                <div class="order__buy">
+                                    <div class="order__price">${desert.price +" " + desert.currency}</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("deserts." + desert.id )]}</div>
+                                </div>
+                            </div>
+                            </div>
+                            `).join(""))}
+                        
                         </div>
-
-
-
-                        <div class="order__all-price">92.99 грн</div>
+                        <div class="order__all-price"></div>
                     </div>
                 </div>
             </div>`

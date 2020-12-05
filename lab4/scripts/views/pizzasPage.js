@@ -1,8 +1,11 @@
 
 
 const view = (products) =>
-    ` 
+    `          <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
            <div class="main__wrapper">
+                          
                     <div class="best__title title"><h2>Пицца: Лучшая Цена</h2></div>
                     <div class="best__row elements__row">
                         ${products.filter((product) => product.categoryId === 1).map((rowProduct) => `<div class="best__element element" id=${rowProduct.id}>
@@ -11,10 +14,8 @@ const view = (products) =>
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
-                            <div class="element__size">
-                                <div class="size__small size picked-size">Маленькая</div>
-                                <div class="size__medium size">Средняя</div>
-                                <div class="size__big size" >Большая</div>
+                            <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
@@ -32,10 +33,8 @@ const view = (products) =>
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
-                            <div class="element__size">
-                                <div class="size__small size picked-size")">Маленькая</div>
-                                <div class="size__medium size" )" >Средняя</div>
-                                <div class="size__big size">Большая</div>
+                            <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span
@@ -55,10 +54,8 @@ const view = (products) =>
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
                                 <div class="element__information">${rowProduct.ingredients}</div>
                             </div>
-                            <div class="element__size">
-                                <div class="size__small size picked-size")">Маленькая</div>
-                                <div class="size__medium size" )" >Средняя</div>
-                                <div class="size__big size">Большая</div>
+                            <div class="element__size element__side-size">
+                                 <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${rowProduct.prices[0]}</span><span

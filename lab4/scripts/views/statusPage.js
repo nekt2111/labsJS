@@ -1,5 +1,10 @@
 
-const view = `<div class="main__wrapper">
+const view = `
+ <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
+<div class="main__wrapper">
+               
             <div class="status">
             <div class="status__title">Cтатус заказа</div>
                 <div class="status__element">

@@ -2,21 +2,69 @@
 import TemplateProcessor from "./templateProccesor.js";
 import Router from "./router.js";
 import Client from "./client.js";
+import Cart from "./cart.js";
 
 const router = new Router()
 const templateProcessor = new TemplateProcessor()
 const client = new Client()
-let map = new Map()
-map.get("deserts")
+const cart = new Cart();
+
+
+
+function showSpinner() {
+    document.querySelector(".spinner__wrapper").style.display = "block"
+    const spinner = document.getElementById("spinner");
+    spinner.classList.add('show');
+    if(document.querySelector(".main__wrapper") !== null) {
+        document.querySelector(".main__wrapper").style.display = "none"
+    }
+    else{
+        document.querySelector(".product__wrapper").style.display = "none"
+    }
+}
+
+function hideSpinner() {
+    document.querySelector(".spinner__wrapper").style.display = "none"
+    spinner.classList.remove('show');
+ }
 
 const headerLinks = ['#sales','#pizzas','#drinks','#sides','#deserts']
 
+export async function getSum(){
+    let prices = []
+    let amounts = []
+    let sum = 0;
+    document.querySelectorAll(".order__price").forEach(element => prices.push(element.textContent.split(" ")[0]))
+    document.querySelectorAll(".order__amount").forEach(amount => amounts.push(amount.textContent))
 
+    for (let i = 0; i <prices.length ; i++) {
+        sum += parseFloat(prices[i]) * parseFloat(amounts[i])
+    }
+    return sum
+}
 
 
 async function load(){
     let {fileName,catalogName,id} = await router.getCurrentState()
     await change(fileName,catalogName,id)
+    addAllEventListeners(catalogName)
+    if(fileName === "cart"){
+        console.log((await getSum()).toPrecision())
+        const price = (await getSum()).toPrecision().split(".")
+        const allPrice = price[0] + "." + price[1].substr(0,2) + " грн"
+        document.querySelector(".order__all-price").textContent = allPrice
+        document.getElementById("price-par").textContent = allPrice
+    }
+    window.scroll(0,0);
+    console.log((await getSum()).toPrecision())
+
+    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
+
+
+
+}
+
+function addAllEventListeners(catalog){
     document.querySelector('.logo img').addEventListener('click',() => {
         window.location.hash = "";
     })
@@ -35,13 +83,26 @@ async function load(){
     document.querySelectorAll(".size__medium").forEach(element => element.addEventListener("click",changeToMediumSize))
     document.querySelectorAll(".size__big").forEach(element => element.addEventListener("click",changeToBigSize))
 
-    window.scroll(0,0);
+    if(catalog === "db"){
+        document.querySelectorAll(".element__cart").forEach(element => element.addEventListener('click',() => {
+            cart.addOneProductToCart(element.parentElement.parentElement.id)
+            document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
+        }))
+    }
+    else {
+        document.querySelectorAll(".element__cart").forEach(element => element.addEventListener('click', () => {
+            cart.addOneProductToCart(catalog + "." + element.parentElement.parentElement.id)
+            document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
+        }))
+
+    }
 
 }
 
 
 let view;
 async function change(fileName,catalogName,id) {
+    showSpinner()
     await import(`./views/${fileName}Page.js`).then((viewModule) => {
         view = viewModule.default;
         console.log(fileName)
@@ -51,6 +112,7 @@ async function change(fileName,catalogName,id) {
         return client.getDataCatalog(catalogName);
     })
         .then((data) => {
+            hideSpinner();
             if(id !== undefined) {
                 templateProcessor.render(view(data,id-1))
             }
@@ -58,6 +120,7 @@ async function change(fileName,catalogName,id) {
                 templateProcessor.render(view(data));
             }
         })
+
 }
 
 
@@ -77,18 +140,17 @@ async function changeToBigSize(){
 
 
 async function changeSize(pickedSize,id){
-        let catalog;
+        let catalog = location.hash.split("#")[1]
         let newId;
         if(catalog === undefined){
             newId = id.split(".")[1]
             catalog = id.split(".")[0]
         }
         else{
-            catalog = location.hash.split("#")[1]
             newId = id;
         }
 
-        const sizes = document.getElementById(newId).querySelectorAll(".size")
+        const sizes = document.getElementById(id).querySelectorAll(".size")
 
         sizes.forEach(element =>element.classList.remove("picked-size"))
 

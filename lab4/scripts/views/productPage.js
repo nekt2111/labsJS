@@ -1,5 +1,8 @@
-const view = (products,productId) => `
+const view = (products,productId) => ` <div class="spinner__wrapper" style="display: none">
+                <div id="spinner"></div>
+            </div>
  <div class="product__wrapper">
+                
                 <div class="product__column-1">
                     <div class="product__logo-wrapper">
                     <div class="product__main-logo">
