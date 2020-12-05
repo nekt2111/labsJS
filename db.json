@@ -9,8 +9,7 @@
     "categoryId": 3,
     "recommended": true,
     "price": 159.99,
-    "relatedProductsIds": [2,3,4,5,6],
-
+    "relatedProductsIds": [2,3,4,5,6]
   },
     {
       "id": 2,
