@@ -97,6 +97,15 @@ function addAllEventListeners(catalog){
 
     }
 
+    let a = {
+        a:1,
+        b:2
+    }
+
+    document.querySelector(".order_btn").addEventListener("click",() => {
+        client.setData(a)
+    })
+
 }
 
 
