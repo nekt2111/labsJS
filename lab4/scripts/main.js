@@ -1,3 +1,5 @@
+localStorage.clear()
+
 
 import TemplateProcessor from "./templateProccesor.js";
 import Router from "./router.js";
