@@ -27,13 +27,13 @@ const view = (object) => ` <div class="spinner__wrapper" style="display: none">
                             <div class="element__logo"><img src=${product.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += 'pizzas/'+${product.id}"><h3>${product.name}</h3></div>
-                                <div class="element__information">${product.ingredients}</div>
+                                <div class="element__information">${product.description}</div>
                             </div>
                              <div class="element__size element__side-size">
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                             <div class="element__buy">
-                                <div class="element__price"><span class="price__number">${product.prices[0]}</span><span
+                                <div class="element__price"><span class="price__number">${product.price}</span><span
                                         class="price__currency">${product.currency}</span></div>
                                 <div class="element__cart">В корзину</div>
                             </div>
@@ -50,7 +50,7 @@ const view = (object) => ` <div class="spinner__wrapper" style="display: none">
                                  <div class="size__small size picked-size">Стандарт</div>
                             </div>
                         <div class="element__buy">
-                            <div class="element__price"><span class="price__number">${drink.prices[0]}</span><span
+                            <div class="element__price"><span class="price__number">${drink.price}</span><span
                                     class="price__currency">${drink.currency}</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>
