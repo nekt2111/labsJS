@@ -14,7 +14,7 @@ const view = (products,productId) => ` <div class="spinner__wrapper" style="disp
                 <div class="product__column-2">
                     <div class="product__main-description">
                         <div class="product__main-title">${products[productId].name}</div>
-                        <div class="product__ingridients">${products[productId].ingredients}</div>
+                        <div class="product__ingridients">${products[productId].description}</div>
                         <div class="product__buy">
                             <div class="product__main-price"><span class="product-price__number">${products[productId].price}</span><span
                                     class="price__currency">${products[productId].currency}</span></div>

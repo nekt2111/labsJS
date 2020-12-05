@@ -61,7 +61,7 @@ const view = (products) =>`
                                 <div class="order__name">
                                     <h3>${pizza.name}</h3>
                                 </div>
-                                <div class="order__ingrid">${pizza.ingredients}</div>
+                                <div class="order__ingrid">${pizza.description}</div>
                                 <div class="order__size">
                                     Стандарт
                                 </div>
@@ -84,7 +84,7 @@ const view = (products) =>`
                                 <div class="order__name">
                                     <h3>${drink.name}</h3>
                                 </div>
-                                <div class="order__ingrid">${drink.ingerdients}</div>
+                                <div class="order__ingrid">${drink.description}</div>
                                 <div class="order__size">
                                     Стандарт
                                 </div>
@@ -107,7 +107,7 @@ const view = (products) =>`
                                 <div class="order__name">
                                     <h3>${side.name}</h3>
                                 </div>
-                                <div class="order__ingrid">${side.ingerdients}</div>
+                                <div class="order__ingrid">${side.description}</div>
                                 <div class="order__size">
                                     Стандарт
                                 </div>
@@ -130,7 +130,7 @@ const view = (products) =>`
                                 <div class="order__name">
                                     <h3>${desert.name}</h3>
                                 </div>
-                                <div class="order__ingrid">${desert.ingerdients}</div>
+                                <div class="order__ingrid">${desert.description}</div>
                                 <div class="order__size">
                                     Стандарт
                                 </div>
