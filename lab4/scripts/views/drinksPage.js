@@ -18,7 +18,7 @@ const view = (drinks) => `
                             </div>
                         <div class="element__buy">
                             <div class="element__price"><span class="price__number">${drink.price}</span><span
-                                    class="price__currency">${drink.currency}</span></div>
+                                    class="price__currency">грн</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>
                     </div> `).join("")}
@@ -36,7 +36,7 @@ const view = (drinks) => `
                             </div>
                         <div class="element__buy">
                             <div class="element__price"><span class="price__number">${drink.price}</span><span
-                                    class="price__currency">${drink.currency}</span></div>
+                                    class="price__currency">грн</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>
                     </div> `).join("")}

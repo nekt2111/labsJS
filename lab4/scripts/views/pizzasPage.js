@@ -19,7 +19,7 @@ const view = (products) =>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
-                                        class="price__currency">${rowProduct.currency}</span></div>
+                                        class="price__currency">грн</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
                             </div>
@@ -38,7 +38,7 @@ const view = (products) =>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
-                                        class="price__currency">${rowProduct.currency}</span></div>
+                                        class="price__currency">грн</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
                             </div>
@@ -59,7 +59,7 @@ const view = (products) =>
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${rowProduct.price}</span><span
-                                        class="price__currency">${rowProduct.currency}</span></div>
+                                        class="price__currency">грн</span></div>
                                 <div class="element__cart">
                                 В корзину</div>
                             </div>

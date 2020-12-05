@@ -17,7 +17,7 @@ const view = (sides) => ` <div class="spinner__wrapper" style="display: none">
                 </div>
                 <div class="element__buy">
                     <div class="element__price"><span class="price__number">${side.price}</span><span
-                            class="price__currency">${side.currency}</span></div>
+                            class="price__currency">грн</span></div>
                     <div class="element__cart">В корзину</div>
                 </div>
             </div>
@@ -36,7 +36,7 @@ const view = (sides) => ` <div class="spinner__wrapper" style="display: none">
                 </div>
                 <div class="element__buy">
                     <div class="element__price"><span class="price__number">${side.price}</span><span
-                            class="price__currency">${side.currency}</span></div>
+                            class="price__currency">грн</span></div>
                     <div class="element__cart">В корзину</div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ const view = (sides) => ` <div class="spinner__wrapper" style="display: none">
                 </div>
                 <div class="element__buy">
                     <div class="element__price"><span class="price__number">${side.price}</span><span
-                            class="price__currency">${side.currency}</span></div>
+                            class="price__currency">грн</span></div>
                     <div class="element__cart">В корзину</div>
                 </div>
             </div>

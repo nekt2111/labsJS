@@ -34,7 +34,7 @@ const view = (object) => ` <div class="spinner__wrapper" style="display: none">
                             </div>
                             <div class="element__buy">
                                 <div class="element__price"><span class="price__number">${product.price}</span><span
-                                        class="price__currency">${product.currency}</span></div>
+                                        class="price__currency">грн</span></div>
                                 <div class="element__cart">В корзину</div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ const view = (object) => ` <div class="spinner__wrapper" style="display: none">
                             </div>
                         <div class="element__buy">
                             <div class="element__price"><span class="price__number">${drink.price}</span><span
-                                    class="price__currency">${drink.currency}</span></div>
+                                    class="price__currency">грн}</span></div>
                             <div class="element__cart">В корзину</div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const view = (object) => ` <div class="spinner__wrapper" style="display: none">
                             </div>і
                                 <div class="element__buy">
                                  <div class="element__price"><span class="price__number">${side.price}</span><span
-                            class="price__currency">${side.currency}</span></div>
+                            class="price__currency">грн</span></div>
                              <div class="element__cart">В корзину</div>
                              </div>
             </div>
@@ -85,7 +85,7 @@ const view = (object) => ` <div class="spinner__wrapper" style="display: none">
                     </div>
                     <div class="element__buy">
                         <div class="element__price"><span class="price__number">${desert.price}</span><span
-                                class="price__currency">${desert.currency}</span></div>
+                                class="price__currency">грн</span></div>
                         <div class="element__cart">В корзину</div>
                     </div>
                 </div>
