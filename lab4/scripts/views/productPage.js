@@ -14,7 +14,7 @@ const view = (products,productId) => ` <div class="spinner__wrapper" style="disp
                 <div class="product__column-2">
                     <div class="product__main-description">
                         <div class="product__main-title">${products[productId].name}</div>
-                        <div class="product__ingridients"><p>${products[productId].description}</p><p>${products[productId].description === undefined ? " " : products[productId].description}</p></div>
+                        <div class="product__ingridients"><p>${products[productId].description}</p><p>${products[productId].size === undefined ? " " : products[productId].size}</p></div>
                         
                       
                         <div class="product__buy">

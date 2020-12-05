@@ -36,8 +36,13 @@ class Router{
                     catalogName = "sides"
                     break;
                 case "cart":
-                        fileName = "cart"
-                        catalogName = "db"
+                        if(localStorage.getItem("cart")===null){
+                            window.location.href = ""
+                        }
+                        else{
+                            fileName = "cart"
+                            catalogName = "db"
+                        }
                     break;
                 case "deserts":
                     fileName = "deserts"

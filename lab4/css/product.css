@@ -68,8 +68,8 @@
 
 .other__logo img{
     position: absolute;
-    margin-left: 5%;
-    width: 100%;
+    margin-left: 25%;
+    width: 65%;
     height: 100%;
     object-fit: cover;
     top:0;
@@ -95,7 +95,7 @@
 .product__main-logo img {
     margin-left: 20%;
     height: 100%;
-    width: 59%;
+    width: 45%;
     position: absolute;
     top: 0;
     left: 0;
@@ -108,7 +108,7 @@
     height: 76%;
     font-family: "Roboto",sans-serif;
     display: grid;
-    grid-gap: 35px;
+    grid-gap: 15px;
     grid-template: 0.1fr 0.3fr 0.1fr/1fr;
 }
 
@@ -160,7 +160,7 @@
 
 
     .product__main-logo img{
-        height: 80%;
+        height: 100%;
     }
     .product__logo-wrapper{
         padding: 0px 20px 50px 0;
@@ -196,16 +196,16 @@
         grid-template: 0.22fr 0.2fr 0.25fr/1fr;
         padding: 30px 30px;
         grid-template-areas: "logo" "desc" "others";
-        grid-gap: 80px;
+        grid-gap: 50px;
     }
     .product__logo-wrapper{
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
     .product__logo-wrapper{
         padding: 10px 20px 20px 20px;
     }
     .product__main-logo{
-        padding: 0 0 65% 0;
+        padding: 0 0 50% 0;
 
     }
 
@@ -218,15 +218,25 @@
         grid-gap:30px;
     }
     .product__main-logo img{
-        height: 120%;
+        height: 100%;
+        width: 50%;
+        margin-left: 20%;
+    }
+    .other__logo img{
+        margin-left: 31%;
+        width: 50%;
     }
 
 }
 
 
 @media (max-width: 880px) {
+    .product__main-logo{
+        padding: 0 0 60% 0;
+
+    }
     .product__wrapper{
-        grid-gap: 80px;
+        grid-gap: 40px;
     }
     .others__products-raw{
         grid-template: 1fr 1fr/1fr 1fr 1fr;
@@ -242,7 +252,7 @@
 }
 @media (max-width: 660px) {
     .product__main-logo img{
-        height: 140%;
+        height: 120%;
     }
     .product-wrapper{
         grid-template: minmax(150px,0.1fr) 1fr minmax(150px,0.5fr)/ 1fr;
@@ -262,31 +272,42 @@
         grid-gap: 50px;
     }
     .product__wrapper{
-        grid-gap: 0px;
+        grid-gap: 60px;
     }
     .product__main-logo img{
-        height: 180%;
+        height: 120%;
+        width: 70%;
+        margin-left: 15%;
     }
     .product__logo-wrapper{
-        margin-bottom: 205px;
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 420px) {
     .product__main-logo img{
-        height: 205%;
+        height: 140%;
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
 @media (max-width: 354px) {
-    .product__logo-wrapper{
-        margin-bottom: 100px;
-    }
     .others__products-raw{
         grid-template: 1fr 1fr 1fr 1fr/1fr;
     }
+    .product__wrapper{
+        grid-gap: 40px;
+    }
+
+
     .product__others{
         grid-template: 0.1fr 1fr/1fr;
+    }
+    .product__main-logo img{
+        height: 200%;
+        width: 90%;
+        margin-left: 5%;
     }
 
 }

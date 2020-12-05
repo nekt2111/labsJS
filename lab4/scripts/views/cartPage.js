@@ -15,33 +15,36 @@ const view = (products) =>`
                         <div class="blank__contacts">
                             <h2 class="blank__par-title">Контакти</h2>
                             <div class="blank__contacts-raw-columns">
-                            <input type="text" class="blank__contact blank__input" placeholder="Имя" required pattern="([A-Za-z]|[А-Яа-я]){4,20}">
-                            <input type="text" class="blank__contact blank__input" id="number" placeholder="Телефон"  required pattern="[0]{1}[0-9]{9}">
-                            <input type="text" class="blank__contact blank__input" placeholder="E-mail" required pattern="([A-Za-z]|[0-9]){4,20}[@]{1}[a-z]{3,10}[.]{1}[a-z]{2,5}">
+                            <input type="text" class="blank__contact blank__input" id="name" placeholder="Имя" required pattern="([A-Za-z]|[А-Яа-я]|[ ]){2,20}">
+                            <input type="text" class="blank__contact blank__input" id="number" placeholder="Телефон (пр. 0933477730)"  required pattern="[0]{1}[0-9]{9}">
+                            <input type="text" class="blank__contact blank__input" id="email" placeholder="E-mail (example@gmail.com)" required pattern="([A-Za-z]|[0-9]){4,20}[@]{1}[a-z]{3,10}[.]{1}[a-z]{2,5}">
                             </div>
                         </div>
                         <div class="blank__addresses">
                             <h2 class="blank__par-title">Адрес</h2>
                             <div class="blank__addresses-raw-columns">
-                            <input type="text" class="blank__address blank__input" id="city" placeholder="Город" required pattern="([A-Za-z]|[А-Яа-я]|[А-Яа-а]){4,20}">
+                            <input type="text" class="blank__address blank__input" id="city" placeholder="Город" required pattern="([A-Za-z]|[А-Яа-я]|[А-Яа-а]|[ ]){4,20}">
                             <input type="text" class="blank__address blank__input" id="street" placeholder="Улица" required pattern="([A-Za-z]|[А-Яа-я]|[1-9]|[ ]){4,20}">
                             <input type="text" class="blank__address blank__input" id="house" placeholder="Дом" required pattern="[1-9]{1,3}">
-                            <input type="text" class="blank__address blank__input" id="flat" placeholder="Квартира" required pattern="[1-9]{1,4}">
-                                <input type="text" class="blank__address blank__input" id="entrance" placeholder="Подъезд" required pattern="[1-9]{1,2}">
+                            <input type="text" class="blank__address blank__input" id="flat" placeholder="Квартира (необяз.)" pattern="[1-9]{1,4}">
+                                <input type="text" class="blank__address blank__input" id="entrance" placeholder="Подъезд (необяз.)" pattern="[1-9]{1,2}">
                             </div>
                         </div>
                         <div class="blank__date-time">
                             <h2 class="blank__par-title">Дата и время</h2>
                             <div class="blank__date-time-raw-columns">
-                                <input type="text" class="blank__date-time blank__input" id="date">
-                                <input type="text" class="blank__date-time blank__input" id="time">
+                                <input type="text" class="blank__date-time blank__input" id="date" placeholder="Дата (дд.мм)" id="date" required pattern="[0-9]{2}[.]{1}[0-9]{2}">
+                                <input type="text" class="blank__date-time blank__input" id = "time" placeholder="Время (чч.мм)" id="time" required pattern="[0-9]{2}[:]{1}[0-9]{2}">
                             </div>
                         </div>
                         <div class="blank__payment">
                             <h2 class="blank__par-title">Оплата</h2>
-                            <input type="text" class="blank__payment blank__input" id="payment">
+                            <select class="blank__payment blank__input" id="payment">
+                            <option>Наличные</option>
+                            <option>Карта</option>
+                            </select>
                         </div>
-                        <div class="blank__price"><p id="word-par">Всего</p><p id="price-par">92.99 грн</p></div>
+                        <div class="blank__price"><p id="word-par">Всего</p><p id="price-par">0 грн</p></div>
                         <div class="blank__reg-button"><a href="status.html"><button type="submit" class="order_btn">Заказать</button></a></div>
 
                     </form>
@@ -67,7 +70,7 @@ const view = (products) =>`
                                 </div>
                                 </div>
                                 <div class="order__buy">
-                                    <div class="order__price">${pizza.prices[0] +" " + pizza.currency}</div>
+                                    <div class="order__price">${pizza.price +" " + "грн"}</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("pizzas." + pizza.id )]}</div>
                                 </div>
                             </div>
@@ -90,7 +93,7 @@ const view = (products) =>`
                                 </div>
                                 </div>
                                 <div class="order__buy">
-                                    <div class="order__price">${drink.prices[0] +" " + drink.currency}</div>
+                                    <div class="order__price">${drink.price +" " + "грн"}</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("drinks." + drink.id )]}</div>
                                 </div>
                             </div>
@@ -113,7 +116,7 @@ const view = (products) =>`
                                 </div>
                                 </div>
                                 <div class="order__buy">
-                                    <div class="order__price">${side.price +" " + side.currency}</div>
+                                    <div class="order__price">${side.price +" " + "грн"}</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("sides." + side.id )]}</div>
                                 </div>
                             </div>
@@ -136,7 +139,7 @@ const view = (products) =>`
                                 </div>
                                 </div>
                                 <div class="order__buy">
-                                    <div class="order__price">${desert.price +" " + desert.currency}</div>
+                                    <div class="order__price">${desert.price +" " + "грн"}</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("deserts." + desert.id )]}</div>
                                 </div>
                             </div>

@@ -12,7 +12,7 @@ const view = (products) =>
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
-                                <div class="element__information">${rowProduct.ingredients}</div>
+                                <div class="element__information">${rowProduct.description}</div>
                             </div>
                             <div class="element__size element__side-size">
                                  <div class="size__small size picked-size">Стандарт</div>
@@ -31,7 +31,7 @@ const view = (products) =>
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
-                                <div class="element__information">${rowProduct.ingredients}</div>
+                                <div class="element__information">${rowProduct.description}</div>
                             </div>
                             <div class="element__size element__side-size">
                                  <div class="size__small size picked-size">Стандарт</div>
@@ -52,7 +52,7 @@ const view = (products) =>
                             <div class="element__logo"><img src=${rowProduct.imgLogo} alt="Paperoni"></div>
                             <div class="element__description">
                                 <div class="element__title link" onclick="window.location.hash += '/'+${rowProduct.id}"><h3>${rowProduct.name}</h3></div>
-                                <div class="element__information">${rowProduct.ingredients}</div>
+                                <div class="element__information">${rowProduct.description}</div>
                             </div>
                             <div class="element__size element__side-size">
                                  <div class="size__small size picked-size">Стандарт</div>

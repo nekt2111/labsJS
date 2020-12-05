@@ -118,8 +118,24 @@ async function addAllEventListeners(catalog,fileName){
     if(fileName === "cart"){
         document.querySelector(".order__registration-blank").addEventListener("submit",async (event) =>{
             event.preventDefault()
+            let order = {
+                name: document.getElementById("name").value,
+                number: document.getElementById("number").value,
+                email: document.getElementById("email").value,
+                city: document.getElementById("city").value,
+                street: document.getElementById("street").value,
+                house: document.getElementById("house").value,
+                flat: document.getElementById("flat").value,
+                entrance: document.getElementById("entrance").value,
+                date: document.getElementById("date").value,
+                time: document.getElementById("time").value,
+                payment: document.getElementById("payment").value,
+            }
+
+            console.log(order)
+
             changeStatus(false)
-            let id = Object.values(await client.setData({a:1,b:2}))[0]
+            let id = Object.values(await client.setData(order))[0]
             localStorage.clear()
             window.location.hash = "status/" + id
 
