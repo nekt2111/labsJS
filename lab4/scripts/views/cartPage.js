@@ -34,7 +34,7 @@ const view = (products) =>`
                             <h2 class="blank__par-title">Дата и время</h2>
                             <div class="blank__date-time-raw-columns">
                                 <input type="text" class="blank__date-time blank__input" id="date" placeholder="Дата (дд.мм)" id="date" required pattern="[0-9]{2}[.]{1}[0-9]{2}">
-                                <input type="text" class="blank__date-time blank__input" id = "time" placeholder="Время (чч.мм)" id="time" required pattern="[0-9]{2}[:]{1}[0-9]{2}">
+                                <input type="text" class="blank__date-time blank__input" id = "time" placeholder="Время (чч:мм)" id="time" required pattern="[0-9]{2}[:]{1}[0-9]{2}">
                             </div>
                         </div>
                         <div class="blank__payment">
