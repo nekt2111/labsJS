@@ -1,5 +1,6 @@
 
 
+
 function getCart() {
     let cart;
     if (localStorage.getItem("cart") === null) {
@@ -51,5 +52,12 @@ class Cart {
         localStorage.setItem("cart",JSON.stringify(cart))
     }
 
-}
+
+
+
+    }
+
+
+
+
 export default Cart;

@@ -4,11 +4,15 @@ import TemplateProcessor from "./templateProccesor.js";
 import Router from "./router.js";
 import Client from "./client.js";
 import Cart from "./cart.js";
+import Spinner from "./spinner.js"
 
 const router = new Router()
 const templateProcessor = new TemplateProcessor()
 const client = new Client()
 const cart = new Cart();
+const spinner = new Spinner()
+
+// Shown Status flag
 let statusShow = true;
 
 export function getStatusShown(){
@@ -20,25 +24,20 @@ export function changeStatus(status){
 
 }
 
+// Manipulation with prices in cart and amount of products
 
-function showSpinner() {
-    document.querySelector(".spinner__wrapper").style.display = "block"
-    const spinner = document.getElementById("spinner");
-    spinner.classList.add('show');
-    if(document.querySelector(".main__wrapper") !== null) {
-        document.querySelector(".main__wrapper").style.display = "none"
+async function changeAllPrice(){
+    const price = (await getSum()).toPrecision().split(".")
+    let allPrice;
+    if(price[1] === undefined) {
+        allPrice = price[0]  + " грн"
     }
-    else{
-        document.querySelector(".product__wrapper").style.display = "none"
+    else {
+        allPrice = price[0] + "." + price[1].substr(0, 2) + " грн"
     }
+    document.querySelector(".order__all-price").textContent = allPrice
+    document.getElementById("price-par").textContent = allPrice
 }
-
-function hideSpinner() {
-    document.querySelector(".spinner__wrapper").style.display = "none"
-    spinner.classList.remove('show');
- }
-
-const headerLinks = ['#sales','#pizzas','#drinks','#sides','#deserts']
 
 export async function getSum(){
     let prices = []
@@ -53,35 +52,40 @@ export async function getSum(){
     return sum
 }
 
+async function minusProduct(){
+    const id = this.parentElement.parentElement.id;
 
-async function load(){
-    let {fileName,catalogName,id} = await router.getCurrentState()
-    console.log(fileName)
-    await change(fileName,catalogName,id)
-    await addAllEventListeners(catalogName,fileName)
-    if(fileName === "cart"){
-        await changeAllPrice()
+    const cartObj = JSON.parse(localStorage.getItem("cart"))
+
+    if(cartObj.amount[cartObj.ids.indexOf(id)] === 1){
+        this.parentElement.parentElement.parentElement.parentElement.remove()
+        cart.removeOneProductFromCart(id)
     }
-    window.scroll(0,0);
-    console.log((await getSum()).toPrecision())
+    else{
+        cart.removeOneProductFromCart(id)
+        this.nextElementSibling.textContent = cartObj.amount[cartObj.ids.indexOf(id)] - 1
+    }
+    await changeAllPrice()
+    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
+}
 
+async function addProduct() {
+
+    const id = this.parentElement.parentElement.id;
+    const cartObj = JSON.parse(localStorage.getItem("cart"))
+    cart.addOneProductToCart(id)
+    this.previousElementSibling.textContent = cartObj.amount[cartObj.ids.indexOf(id)] + 1
+    await changeAllPrice()
     document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
 
 }
 
-async function changeAllPrice(){
-    console.log((await getSum()).toPrecision())
-    const price = (await getSum()).toPrecision().split(".")
-    let allPrice;
-    if(price[1] === undefined) {
-        allPrice = price[0]  + " грн"
-    }
-    else {
-        allPrice = price[0] + "." + price[1].substr(0, 2) + " грн"
-    }
-    document.querySelector(".order__all-price").textContent = allPrice
-    document.getElementById("price-par").textContent = allPrice
-}
+//
+//
+//
+
+// Adding all event listeners on page
+const headerLinks = ['#sales','#pizzas','#drinks','#sides','#deserts']
 
 async function addAllEventListeners(catalog,fileName){
     document.querySelector('.logo img').addEventListener('click',() => {
@@ -105,9 +109,6 @@ async function addAllEventListeners(catalog,fileName){
             window.location.hash = ""
         }
     })
-    document.querySelectorAll(".size__small").forEach(element => element.addEventListener("click",changeToSmallSize))
-    document.querySelectorAll(".size__medium").forEach(element => element.addEventListener("click",changeToMediumSize))
-    document.querySelectorAll(".size__big").forEach(element => element.addEventListener("click",changeToBigSize))
 
     if(catalog === "db"){
         document.querySelectorAll(".element__cart").forEach(element => element.addEventListener('click',() => {
@@ -154,53 +155,18 @@ async function addAllEventListeners(catalog,fileName){
     }
 }
 
-async function minusProduct(){
-    const id = this.parentElement.parentElement.id;
-
-    const cartObj = JSON.parse(localStorage.getItem("cart"))
-
-    if(cartObj.amount[cartObj.ids.indexOf(id)] === 1){
-        this.parentElement.parentElement.parentElement.parentElement.remove()
-        cart.removeOneProductFromCart(id)
-    }
-    else{
-        cart.removeOneProductFromCart(id)
-        this.nextElementSibling.textContent = cartObj.amount[cartObj.ids.indexOf(id)] - 1
-    }
-    await changeAllPrice()
-    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
-}
-
-async function addProduct(){
-
-    const id = this.parentElement.parentElement.id;
-    const cartObj = JSON.parse(localStorage.getItem("cart"))
-    cart.addOneProductToCart(id)
-    this.previousElementSibling.textContent = cartObj.amount[cartObj.ids.indexOf(id)] + 1
-    await changeAllPrice()
-    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
-
-
-
-
-
-
-}
-
+// Function to change the content of page due to it`s hash
 
 let view;
 async function change(fileName,catalogName,id) {
-    showSpinner()
+    spinner.showSpinner()
     await import(`./views/${fileName}Page.js`).then((viewModule) => {
         view = viewModule.default;
-        console.log(fileName)
-        console.log(catalogName)
-        console.log(id)
 
         return client.getDataCatalog(catalogName);
     })
         .then((data) => {
-            hideSpinner();
+            spinner.hideSpinner();
             if(id !== undefined) {
                 templateProcessor.render(view(data,id-1))
             }
@@ -211,48 +177,22 @@ async function change(fileName,catalogName,id) {
 
 }
 
+// Function that loads everything
 
-async function changeToSmallSize(){
-    await changeSize(0,this.parentElement.parentElement.id)
-
-}
-
-async function changeToMediumSize(){
-    await changeSize(1,this.parentElement.parentElement.id)
-}
-
-async function changeToBigSize(){
-    await changeSize(2,this.parentElement.parentElement.id)
-}
+async function load(){
+    let {fileName,catalogName,id} = await router.getCurrentState()
+    await change(fileName,catalogName,id)
+    await addAllEventListeners(catalogName,fileName)
+    if(fileName === "cart"){
+        await changeAllPrice()
+    }
+    window.scroll(0,0);
 
 
-
-async function changeSize(pickedSize,id){
-        let catalog = location.hash.split("#")[1]
-        let newId;
-        if(catalog === undefined){
-            newId = id.split(".")[1]
-            catalog = id.split(".")[0]
-        }
-        else{
-            newId = id;
-        }
-
-        const sizes = document.getElementById(id).querySelectorAll(".size")
-
-        sizes.forEach(element =>element.classList.remove("picked-size"))
-
-        for (let i = 0; i < sizes.length ; i++) {
-                if(i === pickedSize){
-                    sizes[i].classList.add("picked-size")
-                }
-        }
-
-    const productData = await client.getObjectInCatalog(catalog,parseInt(newId));
-    document.getElementById(id).querySelector(".price__number").textContent = productData.prices[pickedSize]
-
+    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
 
 }
+
 
 
 window.onhashchange = load

@@ -62,8 +62,7 @@ class Router{
             const tempId = location.split('/')[1];
             if(location.split("/")[0] !== "status") {
                 const exists = await client.idExists(location.split('/')[0], parseInt(tempId));
-                console.log(exists)
-                if (!exists) {
+                if (!exists || isNaN(+tempId)) {
                     fileName = "index";
                     catalogName = "db";
                 } else {
@@ -89,8 +88,6 @@ class Router{
                             fileName = "product"
                             catalogName = "deserts"
                             break;
-
-
                     }
                 }
 
