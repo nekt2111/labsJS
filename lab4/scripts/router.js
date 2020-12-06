@@ -36,7 +36,8 @@ class Router{
                     catalogName = "sides"
                     break;
                 case "cart":
-                        if(localStorage.getItem("cart")===null){
+                        if(localStorage.getItem("cart")===null || JSON.parse(localStorage.getItem("cart")).ids.length === 0 )
+                        {
                             window.location.href = ""
                         }
                         else{
@@ -96,7 +97,6 @@ class Router{
                 if(getStatusShown()){
                     fileName = "index"
                     catalogName = "db"
-                    console.log(getStatusShown())
                 }
                 else{
                     fileName = "status";
