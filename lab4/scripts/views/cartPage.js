@@ -69,9 +69,14 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy">
+                                <div class="order__buy" id=${"pizzas." + pizza.id}>
                                     <div class="order__price">${pizza.price +" " + "грн"}</div>
-                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("pizzas." + pizza.id )]}</div>
+                                    <div class="order__amount-plus-minus">
+                                    <div class="order__amount-minus">—</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("pizzas." + pizza.id )]}
+                                    </div>
+                                    <div class="order__amount-plus">+</div>
+                                    </div>
                                 </div>
                             </div>
                             </div>
@@ -92,9 +97,14 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy">
+                                <div class="order__buy" id={"drinks." + drink.id}>
                                     <div class="order__price">${drink.price +" " + "грн"}</div>
-                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("drinks." + drink.id )]}</div>
+                                      <div class="order__amount-plus-minus">
+                                    <div class="order__amount-minus">—</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("drinks." + drink.id )]}
+                                    </div>
+                                    <div class="order__amount-plus">+</div>
+                                    </div>
                                 </div>
                             </div>
                             </div>
@@ -115,9 +125,14 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy">
+                                <div class="order__buy" id={"sides." + side.id}>
                                     <div class="order__price">${side.price +" " + "грн"}</div>
-                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("sides." + side.id )]}</div>
+                                      <div class="order__amount-plus-minus">
+                                    <div class="order__amount-minus">—</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("sides." + side.id )]}
+                                    </div>
+                                    <div class="order__amount-plus">+</div>
+                                    </div>
                                 </div>
                             </div>
                             </div>
@@ -138,9 +153,14 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy">
+                                <div class="order__buy" id={"deserts." + desert.id}>
                                     <div class="order__price">${desert.price +" " + "грн"}</div>
-                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("deserts." + desert.id )]}</div>
+                                     <div class="order__amount-plus-minus">
+                                    <div class="order__amount-minus">—</div>
+                                    <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("deserts." + desert.id )]}
+                                    </div>
+                                    <div class="order__amount-plus">+</div>
+                                    </div>
                                 </div>
                             </div>
                             </div>

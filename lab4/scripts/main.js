@@ -60,25 +60,27 @@ async function load(){
     await change(fileName,catalogName,id)
     await addAllEventListeners(catalogName,fileName)
     if(fileName === "cart"){
-        console.log((await getSum()).toPrecision())
-        const price = (await getSum()).toPrecision().split(".")
-        let allPrice;
-        if(price[1] === undefined) {
-            allPrice = price[0]  + " грн"
-        }
-        else {
-            allPrice = price[0] + "." + price[1].substr(0, 2) + " грн"
-        }
-        document.querySelector(".order__all-price").textContent = allPrice
-        document.getElementById("price-par").textContent = allPrice
+        await changeAllPrice()
     }
     window.scroll(0,0);
     console.log((await getSum()).toPrecision())
 
     document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
 
+}
 
-
+async function changeAllPrice(){
+    console.log((await getSum()).toPrecision())
+    const price = (await getSum()).toPrecision().split(".")
+    let allPrice;
+    if(price[1] === undefined) {
+        allPrice = price[0]  + " грн"
+    }
+    else {
+        allPrice = price[0] + "." + price[1].substr(0, 2) + " грн"
+    }
+    document.querySelector(".order__all-price").textContent = allPrice
+    document.getElementById("price-par").textContent = allPrice
 }
 
 async function addAllEventListeners(catalog,fileName){
@@ -95,9 +97,6 @@ async function addAllEventListeners(catalog,fileName){
             window.location.hash = headerLinks[i]
         })
     }
-
-
-
     document.querySelector('.header__cart').addEventListener('click',() => {
         if(localStorage.getItem("cart") !== null) {
             window.location.hash = "#cart";
@@ -123,6 +122,12 @@ async function addAllEventListeners(catalog,fileName){
         }))
     }
     if(fileName === "cart"){
+
+
+        document.querySelectorAll(".order__amount-minus").forEach(element => element.addEventListener("click",minusProduct))
+        document.querySelectorAll(".order__amount-plus").forEach(element => element.addEventListener("click",addProduct))
+
+
         document.querySelector(".order__registration-blank").addEventListener("submit",async (event) =>{
             event.preventDefault()
             let order = {
@@ -139,7 +144,6 @@ async function addAllEventListeners(catalog,fileName){
                 payment: document.getElementById("payment").value,
             }
 
-
             changeStatus(false)
             let id = Object.values(await client.setData(order))[0]
             localStorage.clear()
@@ -148,6 +152,36 @@ async function addAllEventListeners(catalog,fileName){
 
         })
     }
+}
+
+async function minusProduct(){
+    const id = this.parentElement.parentElement.id;
+
+    const cartObj = JSON.parse(localStorage.getItem("cart"))
+
+    if(cartObj.amount[cartObj.ids.indexOf(id)] === 1){
+        this.parentElement.parentElement.parentElement.parentElement.remove()
+        cart.removeOneProductFromCart(id)
+    }
+    else{
+        cart.removeOneProductFromCart(id)
+        this.nextElementSibling.textContent = cartObj.amount[cartObj.ids.indexOf(id)] - 1
+    }
+    await changeAllPrice()
+    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
+}
+
+async function addProduct(){
+
+    const id = this.parentElement.parentElement.id;
+    const cartObj = JSON.parse(localStorage.getItem("cart"))
+    cart.addOneProductToCart(id)
+    this.previousElementSibling.textContent = cartObj.amount[cartObj.ids.indexOf(id)] + 1
+    await changeAllPrice()
+    document.querySelector(".header__amount-of-products").textContent = cart.getAmountOfProduct().toString()
+
+
+
 
 
 

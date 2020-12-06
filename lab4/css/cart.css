@@ -246,11 +246,7 @@
 
 }
 .order__amount{
-    background-color: red;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    padding: 5px 10px;
+
 }
 
 .order__price{
@@ -277,4 +273,21 @@
     object-fit: cover;
     border-radius: 15px;
 
+}
+
+.order__amount-plus-minus{
+    display: grid;
+    grid-template: 1fr/1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.order__amount-minus,.order__amount-plus{
+    cursor: pointer;
 }

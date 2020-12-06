@@ -42,6 +42,8 @@ class Cart {
         let cart = getCart()
         if(cart.amount[cart.ids.indexOf(id)] === 1){
                 cart.amount.splice(cart.ids.indexOf(id),1)
+                cart.ids.splice(cart.ids.indexOf(id),1)
+
         }
         else{
             cart.amount[cart.ids.indexOf(id)]--
