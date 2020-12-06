@@ -26,7 +26,7 @@ const view = (sides) => ` <div class="spinner__wrapper" style="display: none">
             <div class="best__title title"><h2>Хлебцы</h2></div>
             <div class="best__row elements__row">
                  ${sides.filter(side => side.categoryId === 2).map(side => `
-            <div class="best__element element element-drink">
+            <div class="best__element element element-drink" id=${side.id} >
                 <div class="element__logo"><img src=${side.imgLogo} alt="Streeps"></div>
                 <div class="element__description element__center-description">
                     <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${side.id}"><h3>${side.name}</h3></div>
@@ -43,9 +43,9 @@ const view = (sides) => ` <div class="spinner__wrapper" style="display: none">
             `).join("")}
         </div>
             <div class="best__title title"><h2>Салат</h2></div>
-            <div class="best__row elements__row">
+            <div class="best__row elements__row" >
                   ${sides.filter(side => side.categoryId === 3).map(side => `
-            <div class="best__element element element-drink">
+            <div class="best__element element element-drink" id=${side.id}>
                 <div class="element__logo"><img src=${side.imgLogo} alt="Streeps"></div>
                 <div class="element__description element__center-description">
                     <div class="element__title element__drink-title link" onclick="window.location.hash += '/'+${side.id}"><h3>${side.name}</h3></div>
