@@ -98,7 +98,7 @@ async function addAllEventListeners(catalog,fileName){
         })
     }
     document.querySelector('.header__cart').addEventListener('click',() => {
-        if(localStorage.getItem("cart") !== null) {
+        if(localStorage.getItem("cart") !== null && JSON.parse(localStorage.getItem("cart")).ids.length !== 0) {
             window.location.hash = "#cart";
         }
         else{

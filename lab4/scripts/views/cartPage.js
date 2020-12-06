@@ -81,10 +81,9 @@ const view = (products) =>`
                             </div>
                             </div>
                             `).join(""))}
-                        
-                         ${(Object.entries(products).filter(([key]) => key !== "sales" )[1][1].
-                            filter(element => JSON.parse(localStorage.getItem("cart")).ids.
-                                includes("drinks." + element.id)).map(drink => `
+                             ${(Object.entries(products).filter(([key]) => key !== "sales" )[1][1].
+                             filter(element => JSON.parse(localStorage.getItem("cart")).ids.
+                            includes("drinks." + element.id)).map(drink => `
                             <div class="order__main-info">
                             <div class="order__logo"><img src=${drink.imgLogo} alt=""></div>
                             <div class="order__description">
@@ -97,9 +96,9 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy" id={"drinks." + drink.id}>
+                                <div class="order__buy" id=${"drinks." + drink.id}>
                                     <div class="order__price">${drink.price +" " + "грн"}</div>
-                                      <div class="order__amount-plus-minus">
+                                    <div class="order__amount-plus-minus">
                                     <div class="order__amount-minus">—</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("drinks." + drink.id )]}
                                     </div>
@@ -109,8 +108,8 @@ const view = (products) =>`
                             </div>
                             </div>
                             `).join(""))}
-                         
-                          ${(Object.entries(products).filter(([key]) => key !== "sales" )[2][1].
+                             
+                              ${(Object.entries(products).filter(([key]) => key !== "sales" )[2][1].
                             filter(element => JSON.parse(localStorage.getItem("cart")).ids.
                             includes("sides." + element.id)).map(side => `
                             <div class="order__main-info">
@@ -125,9 +124,9 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy" id={"sides." + side.id}>
+                                <div class="order__buy" id=${"sides." + side.id}>
                                     <div class="order__price">${side.price +" " + "грн"}</div>
-                                      <div class="order__amount-plus-minus">
+                                    <div class="order__amount-plus-minus">
                                     <div class="order__amount-minus">—</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("sides." + side.id )]}
                                     </div>
@@ -137,10 +136,10 @@ const view = (products) =>`
                             </div>
                             </div>
                             `).join(""))}
-                          
-                          ${(Object.entries(products).filter(([key]) => key !== "sales" )[3][1].
-                            filter(element => JSON.parse(localStorage.getItem("cart")).ids.
-                            includes("deserts." + element.id)).map(desert => `
+                              
+                               ${(Object.entries(products).filter(([key]) => key !== "sales" )[3][1].
+                        filter(element => JSON.parse(localStorage.getItem("cart")).ids.
+                                includes("deserts." + element.id)).map(desert => `
                             <div class="order__main-info">
                             <div class="order__logo"><img src=${desert.imgLogo} alt=""></div>
                             <div class="order__description">
@@ -153,9 +152,9 @@ const view = (products) =>`
                                     Стандарт
                                 </div>
                                 </div>
-                                <div class="order__buy" id={"deserts." + desert.id}>
+                                <div class="order__buy" id=${"deserts." + desert.id}>
                                     <div class="order__price">${desert.price +" " + "грн"}</div>
-                                     <div class="order__amount-plus-minus">
+                                    <div class="order__amount-plus-minus">
                                     <div class="order__amount-minus">—</div>
                                     <div class="order__amount">${JSON.parse(localStorage.getItem("cart")).amount[JSON.parse(localStorage.getItem("cart")).ids.indexOf("deserts." + desert.id )]}
                                     </div>
