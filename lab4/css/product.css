@@ -32,7 +32,7 @@
     font-family: "Open Sans",sans-serif;
     display: grid;
     grid-area: others;
-    grid-template: 0.3fr 1fr/1fr;
+    grid-template: 0.15fr 1fr/1fr;
     grid-gap: 10px;
 }
 
@@ -41,7 +41,7 @@
 }
 .others__products-raw {
     display: grid;
-    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr;
+    grid-template: 0.6fr/1fr 1fr 1fr 1fr 1fr;
     grid-gap: 50px;
 
 }

@@ -87,7 +87,7 @@ async function addProduct() {
 // Adding all event listeners on page
 const headerLinks = ['#sales','#pizzas','#drinks','#sides','#deserts']
 
-async function addAllEventListeners(catalog,fileName){
+function addAllEventListeners(catalog,fileName){
     document.querySelector('.logo img').addEventListener('click',() => {
         window.location.hash = "";
     })
@@ -96,8 +96,6 @@ async function addAllEventListeners(catalog,fileName){
     })
     for (let i = 0; i < headerLinks.length; i++) {
         document.querySelectorAll('.nav__link')[i].addEventListener('click',() => {
-
-
             window.location.hash = headerLinks[i]
         })
     }
