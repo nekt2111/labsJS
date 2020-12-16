@@ -2,88 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/labsJS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/labsJS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/.idea/lab4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/cart.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/drinks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/sale.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/sales.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/side.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/css/status.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/cart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/deserts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/drinks.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/pizzas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/product.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/sale.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/sales.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/sides.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/html/status.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/MasterCard_early_1990s_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/Pngtreeend_pizza_chef_2640834.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/Visa_Inc._logo.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/blackFriday.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/deserts/lavaCake.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/deserts/maffin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/NG-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/apple-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/cc-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/fan-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/gaz-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/hoegaarden-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/lowenbrau-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/orange-thumbnail-960x960.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/drinks/Захист ЛР4.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/galochka.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/krestik.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Cantri.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Carbonara.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Havai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Margarita.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Paperoni-Spice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/PaperoniTom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/bavaria.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/paperonBluz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/spicy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/pizza/Карбонара_300dpi-min-thumbnail-960x960-70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/shopping-cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/shopping-cart1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/side/krill.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/side/salat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/side/salatChicken.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/side/streeps.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/side/xleb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/side/xlebBavar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/visa-card-and-mastercard-logo-png-28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/img/vtornik.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/spinner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/templateProccesor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/cartPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/desertsPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/drinksPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/errorPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/indexPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/pizzasPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/productPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/salePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/salesPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/sidesPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/scripts/views/statusPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +115,7 @@
       <workItem from="1607427451464" duration="359000" />
       <workItem from="1608075979504" duration="285000" />
       <workItem from="1608076278885" duration="510000" />
+      <workItem from="1608077362415" duration="30000" />
     </task>
     <servers />
   </component>
