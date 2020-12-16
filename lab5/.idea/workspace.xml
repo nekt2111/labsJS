@@ -21,26 +21,27 @@
   <component name="ChangeListManager">
     <list default="true" id="81df9019-fc4b-4088-9186-65ade13daf8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/drinks.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/drinks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sale.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sale.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sales.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sales.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/side.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/side.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/status.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/deserts.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/deserts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/drinks.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/drinks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/pizzas.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/pizzas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sale.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sale.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/sides.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/sides.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/cart.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/cart.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/spinner.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/spinner.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/templateProccesor.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/templateProccesor.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/utility.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/utility.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/cartPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/cartPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/desertsPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/desertsPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/drinksPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/drinksPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/indexPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/indexPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/pizzasPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/pizzasPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/productPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/productPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/salePage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/salePage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/salesPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/salesPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/sidesPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/sidesPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/statusPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov-report/scripts/views/statusPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/lcov.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +89,7 @@
       <workItem from="1607004008096" duration="39000" />
       <workItem from="1607004115394" duration="643000" />
       <workItem from="1607012305686" duration="1811000" />
+      <workItem from="1608111229194" duration="577000" />
     </task>
     <servers />
   </component>

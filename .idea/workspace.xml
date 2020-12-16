@@ -4,6 +4,26 @@
     <list default="true" id="fa80437d-e26c-4a40-9f2f-4c29f67a4fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/clover.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/clover.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/coverage-final.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/coverage-final.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/cart.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/cart.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/spinner.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/spinner.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/templateProccesor.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/templateProccesor.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/utility.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/utility.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/cartPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/cartPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/desertsPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/desertsPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/drinksPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/drinksPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/indexPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/indexPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/pizzasPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/pizzasPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/productPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/productPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/salePage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/salePage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/salesPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/salesPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/sidesPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/sidesPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/statusPage.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov-report/scripts/views/statusPage.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/lab5/coverage/lcov.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.14" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
@@ -115,7 +135,8 @@
       <workItem from="1607427451464" duration="359000" />
       <workItem from="1608075979504" duration="285000" />
       <workItem from="1608076278885" duration="510000" />
-      <workItem from="1608077362415" duration="30000" />
+      <workItem from="1608077362415" duration="737000" />
+      <workItem from="1608110752126" duration="157000" />
     </task>
     <servers />
   </component>
